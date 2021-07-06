@@ -8,11 +8,11 @@ permalink:        pretty
 
 
 # Setup
-title:            Trail Blazer
+title:            TrailBlazed
 tagline:          'A path for aspiring Data Engineers'
 description:      'This website will walk you through the roadmap of Cloud Data Engineer.'
-url:              https://trailblazer.github.io/
-baseurl:          "https://trailblazer.github.io/"
+url:              https://trailblazed.github.io/
+baseurl:          "https://trailblazed.github.io/"
 
 author:
   name:           'Mark Otto'
@@ -24,4 +24,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:          https://github.com/TrailBlazer
+  repo:          https://github.com/TrailBlazed
