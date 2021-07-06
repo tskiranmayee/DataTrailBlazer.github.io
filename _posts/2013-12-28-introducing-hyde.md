@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Introducing Hyde
+title: Data Engineer Path
 ---
 
-Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+To become a Data Engineer, one should develop a number of skills. This website will provide walk you through all of them.
 
 ### Built on Poole
 
