@@ -31,7 +31,7 @@ To become a Data Engineer, one should develop a number of skills. This website w
   <li>Hadoop</li>
   <li>Spark</li>
   <li>Hive</li>
-  <li>>MongoDB</li>
+  <li>MongoDB</li>
   </ul>
   <h3> Stage 6:</h3>
   <ul>
