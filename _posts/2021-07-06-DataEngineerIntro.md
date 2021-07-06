@@ -16,12 +16,12 @@ To become a Data Engineer, one should develop a number of skills. This website w
     <li>SSIS</li>
     <li>Python for Data Engineering</li>
   </ul>
- <h3> Stage 3:</h3>
-    <ul>
-      <li>Introduction to Azure Cloud for Data Engineers</li>
-      <li>Power BI for Data Engineers</li>
+  <h3> Stage 3:</h3>
+  <ul>
+    <li>Introduction to Azure Cloud for Data Engineers</li>
+    <li>Power BI for Data Engineers</li>
     </ul>
-  <h3> Stage 4:</h3>
+ <h3> Stage 4:</h3>
   <ul>
     <li>Hadoop</li>
     <li>Spark</li>
