@@ -7,5 +7,8 @@ title: SQL for Relation Databases
 s = "Python syntax highlighting"
 print s
 ```
+``` sql
+SELECT * FROM EMP JOIN DEPT ON EMP.DEPTNO = DEPT.DEPTNO;
+```
 
 
