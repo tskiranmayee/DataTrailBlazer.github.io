@@ -11,8 +11,8 @@ permalink:        pretty
 title:            Trail Blazed
 tagline:          'A path for aspiring Data Engineers'
 description:      'This website will walk you through the roadmap of Cloud Data Engineer.'
-url:              https://trailblazed.github.com/
-baseurl:          "https://trailblazed.github.com/"
+url:              https://trailblazed.github.io/
+baseurl:          "https://trailblazed.github.io/"
 
 author:
   name:           'Tadepalli Sarada Kiranmayee'
