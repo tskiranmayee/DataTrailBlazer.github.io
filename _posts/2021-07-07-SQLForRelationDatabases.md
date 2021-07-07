@@ -3,6 +3,6 @@ layout: post
 title: SQL for Relation Databases
 ---
 
-To revise the SQL commands I took the Sailors table from **Database Management by Ramamkrishna**.
+For practicing the SQL commands lets take the Boat Reservation Database from **Database Management Systems by Raghu Ramamkrishna**.
 This example consists of 3 tables : **Sailors**,**Boats** and **Reserves**
 
