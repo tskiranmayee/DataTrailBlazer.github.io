@@ -1,6 +1,6 @@
 
 # Trail Blazed
- This website will help inbuilding the skills required for aspirining Data Engineers from begineer to expert.
+ This website will help with all the skills required for aspirining Data Engineers from begineer to expert.
 <br>
 
 ## Author
