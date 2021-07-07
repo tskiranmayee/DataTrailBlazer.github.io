@@ -1,6 +1,7 @@
 
 # Trail Blazed
 <p> This website will help inbuilding the skills required for aspirining Data Engineers from begineer to expert.</p>
+<br>
 ## Author
 
 **Tadepalli Sarada Kiranmayee**
