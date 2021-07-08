@@ -123,13 +123,25 @@ FROM Reserves R
 WHERE R.sid = S.sid ))
 ```
 ### AGGREGATE OPERATORS
-22)	select avg(s.age) from sailors s
+22)	Find the average age of all sailors.
+```sql
+select avg(s.age) from sailors s
+```
 
-23)	select avg(s.age) from sailors s where s.rating=10;
+23) Find the average age of sailors with a rating of 10.
+```sql
+select avg(s.age) from sailors s where s.rating=10;
+```
 
-24)	select s.sname,s.age from sailors s where s.age=(select max(s1.age) from sailors s1);
+24) Find the name and age of the oldest sailor.
+	```sql   
+  select s.sname,s.age from sailors s where s.age=(select max(s1.age) from sailors s1);
+ 
 
-25)	select count(*) from sailors s;
+25) Count the number of sailor.
+```sql
+select count(*) from sailors s;
+```
 
 26)	select distinct count(*) from sailors s;
 
