@@ -29,7 +29,8 @@ select distinct s.sname from sailors s,reserves r where s.sid=r.sid
 ```
 7) Compute increments for the ratings of persons who have sailed two different boats on the same day.	
 ``` sql 
-select distinct s.sname,s.rating+1 as inc from sailors s,reserves r1,reserves r2,boats b1,boats b2 where s.sid=r1.sid and r1.reserveDate=r2.reserveDate and r1.bid=b1.bid and b1.color<>b2.color;
+select distinct s.sname,s.rating+1 as inc from sailors s,reserves r1,reserves r2,boats b1,boats b2
+where s.sid=r1.sid and r1.reserveDate=r2.reserveDate and r1.bid=b1.bid and b1.color<>b2.color;
 ```
 8) Find the ages of sailors whose name begins and ends with B and has at least three characters.
 ```sql
@@ -37,7 +38,8 @@ select distinct s.sname,s.age from sailors s where s.sname like 'B_%B';
 ```
 9)  Find the names of sailors who have reserved a red or a green boat.
 ```sql
-select distinct s.sname from sailors s,boats b, reserves r where s.sid=r.sid and r.bid=b.bid and (b.color='red' or b.color='green');
+select distinct s.sname from sailors s,boats b, reserves r where s.sid=r.sid 
+and r.bid=b.bid and (b.color='red' or b.color='green');
 ```
 Best way of querying:
 ```sql
@@ -48,7 +50,9 @@ select s2.sname from sailors s2,reserves r2,boats b2 where s2.sid=r2.sid and r2.
 
 10) Find the names of sailor's who have reserved both a red and a green boat.
 ```sql 
-select  distinct s.sname from sailors s,boats b1,boats b2, reserves r1,reserves r2 where s.sid=r1.sid and s.sid=r2.sid and r1.bid=b1.bid and r2.bid=b2.bid and r2.bid=b2.bid and (b1.color='red' AND b2.color='green'); 
+select  distinct s.sname from sailors s,boats b1,boats b2, reserves r1,reserves r2 where s.sid=r1.sid 
+and s.sid=r2.sid and r1.bid=b1.bid and r2.bid=b2.bid and r2.bid=b2.bid 
+and (b1.color='red' AND b2.color='green'); 
 ```
 Best way of querying:
 ```sql 
@@ -74,10 +78,13 @@ select s2.sid from sailors s2,reserves r2,boats b2 where s2.sid=r2.sid and r2.bi
 ```sql select distinct s1.sname from sailors s1 where s1.sid in(select r1.sid from reserves r1 where r1.bid=103) ```
 14) Find the names of sailors who have reserved a red boat.
 ```sql
-select s1.sname from sailors s1 where s1.sid in (select r1.sid from reserves r1 where r1.bid in(select b1.bid from boats b1 where b1.color='red')) ```
+select s1.sname from sailors s1 where s1.sid in (select r1.sid from reserves r1 where r1.bid in(select b1.bid from boats b1 where b1.color='red')) 
+```
 15) Find the names of sailors who have not reserved a red boat.
 ```sql 
-select s1.sname from sailors s1 where s1.sid not in (select r1.sid from reserves r1 where r1.bid in(select b1.bid from boats b1 where b1.color='red')) ```
+select s1.sname from sailors s1 where s1.sid 
+not in (select r1.sid from reserves r1 where r1.bid in(select b1.bid from boats b1 where b1.color='red')) 
+```
 16)	select s1.sname from sailors s1 where exists (select * from reserves r1 where r1.bid=103 and s1.sid=r1.sid)
 17)	select s1.sname from sailors s1 where s1.rating>any (select s2.rating from sailors s2 where s2.sname='Horatio')
 18)	select s1.sname,s1.rating from sailors s1 where s1.rating>=all (select s2.rating from sailors s2 where s2.sname='Horatio')
