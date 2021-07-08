@@ -136,6 +136,7 @@ select avg(s.age) from sailors s where s.rating=10;
 24) Find the name and age of the oldest sailor.
 	```sql   
   select s.sname,s.age from sailors s where s.age=(select max(s1.age) from sailors s1);
+  ```
  
 
 25) Count the number of sailor.
