@@ -6,7 +6,7 @@ title: SQL for Relation Databases
 For practicing the SQL commands lets take the Boat Reservation Database from **Database Management Systems by Raghu Ramamkrishna**.
 <br>
 This example consists of 3 tables : **Sailors**,**Boats** and **Reserves**
-<br>
+
 ### Basic Quieres
 **Q1) Find the names and ages of all sailors. <br>
 Q2) Find all sailors with a rating above 7. <br>
