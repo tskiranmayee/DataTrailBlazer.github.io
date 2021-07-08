@@ -2,16 +2,22 @@
 layout: post
 title: Answers to Boat Reservation Database Table
 ---
-
-1)	select s.sname ,s.age from sailors s;
-2)	select s.sid,s.sname,s.rating,s.age from sailors s where s.rating>7;
-3)	select distinct s.sid,s.sname from sailors s,reserves r where s.sid=r.sid and r.bid=103
-4)	select distinct s.sid,s.sname,b.color from sailors s,reserves r,boats b where s.sid=r.sid and r.bid=b.bid and b.color='red';
-5)	select distinct b.color from sailors s,boats b , reserves r where s.sid=r.sid and r.bid=b.bid and s.sname='Lubber'
-6)	select distinct s.sname from sailors s,reserves r where s.sid=r.sid
-7)	select distinct s.sname,s.rating+1 as inc from sailors s,reserves r1,reserves r2,boats b1,boats b2 where s.sid=r1.sid and r1.reserveDate=r2.reserveDate and r1.bid=b1.bid and b1.color<>b2.color;
-8)	select distinct s.sname,s.age from sailors s where s.sname like 'B_%B';
-9)	select distinct s.sname from sailors s,boats b, reserves r where s.sid=r.sid and r.bid=b.bid and (b.color='red' or b.color='green');
+### Basic Quieres
+1) Find the names and ages of all sailors.	
+``` sql
+select s.sname ,s.age from sailors s;
+```
+2) Find all sailors with a rating above 7.
+```sql 
+select s.sid,s.sname,s.rating,s.age from sailors s where s.rating>7;
+```
+7)	select distinct s.sid,s.sname from sailors s,reserves r where s.sid=r.sid and r.bid=103
+8)	select distinct s.sid,s.sname,b.color from sailors s,reserves r,boats b where s.sid=r.sid and r.bid=b.bid and b.color='red';
+9)	select distinct b.color from sailors s,boats b , reserves r where s.sid=r.sid and r.bid=b.bid and s.sname='Lubber'
+10)	select distinct s.sname from sailors s,reserves r where s.sid=r.sid
+11)	select distinct s.sname,s.rating+1 as inc from sailors s,reserves r1,reserves r2,boats b1,boats b2 where s.sid=r1.sid and r1.reserveDate=r2.reserveDate and r1.bid=b1.bid and b1.color<>b2.color;
+12)	select distinct s.sname,s.age from sailors s where s.sname like 'B_%B';
+13)	select distinct s.sname from sailors s,boats b, reserves r where s.sid=r.sid and r.bid=b.bid and (b.color='red' or b.color='green');
 best way of querying:
 select s1.sname from sailors s1,reserves r1,boats b1 where s1.sid=r1.sid and r1.bid=b1.bid and b1.color='red'
 union 
