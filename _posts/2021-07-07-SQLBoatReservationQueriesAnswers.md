@@ -78,7 +78,8 @@ select s2.sid from sailors s2,reserves r2,boats b2 where s2.sid=r2.sid and r2.bi
 ```sql select distinct s1.sname from sailors s1 where s1.sid in(select r1.sid from reserves r1 where r1.bid=103) ```
 14) Find the names of sailors who have reserved a red boat.
 ```sql
-select s1.sname from sailors s1 where s1.sid in (select r1.sid from reserves r1 where r1.bid in(select b1.bid from boats b1 where b1.color='red')) 
+select s1.sname from sailors s1 where s1.sid 
+in (select r1.sid from reserves r1 where r1.bid in(select b1.bid from boats b1 where b1.color='red')) 
 ```
 15) Find the names of sailors who have not reserved a red boat.
 ```sql 
