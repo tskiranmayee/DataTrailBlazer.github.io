@@ -88,13 +88,32 @@ in (select r1.sid from reserves r1 where r1.bid in(select b1.bid from boats b1 w
 select s1.sname from sailors s1 where s1.sid 
 not in (select r1.sid from reserves r1 where r1.bid in(select b1.bid from boats b1 where b1.color='red')) 
 ```
-16)	select s1.sname from sailors s1 where exists (select * from reserves r1 where r1.bid=103 and s1.sid=r1.sid)
-17)	select s1.sname from sailors s1 where s1.rating>any (select s2.rating from sailors s2 where s2.sname='Horatio')
-18)	select s1.sname,s1.rating from sailors s1 where s1.rating>=all (select s2.rating from sailors s2 where s2.sname='Horatio')
-19)	select s1.sname,s1.rating from sailors s1 where s1.rating>=all (select s2.rating from sailors s2)
-20)	select distinct s1.sname,s1.sid from sailors s1,reserves r1,boats b1 where s1.sid=r1.sid and r1.bid=b1.bid and b1.color='red'
+### Correlational Queries
+16)	Find the names of sailors who have reserved boat number 103.
+```sql
+select s1.sname from sailors s1 where exists (select * from reserves r1 where r1.bid=103 and s1.sid=r1.sid)
+```
+17) Find sailors whose rating is better than some sailor called Horatio.
+```sql 
+select s1.sname from sailors s1 where s1.rating>any (select s2.rating from sailors s2 where s2.sname='Horatio')
+```
+18)	Find sailors whose rating is better than every sailor' called Horatito.
+```sql
+select s1.sname,s1.rating from sailors s1 where s1.rating>=all (select s2.rating from sailors s2 where s2.sname='Horatio')
+```
+19)	Find the sailor's with the highest rating.
+```sql 
+select s1.sname,s1.rating from sailors s1 where s1.rating>=all (select s2.rating from sailors s2)
+```
+### More Nested
+20) Find the names of sailors who have reserved both a red and a green boat.
+```sql
+select distinct s1.sname,s1.sid from sailors s1,reserves r1,boats b1 where s1.sid=r1.sid and r1.bid=b1.bid and b1.color='red'
 and s1.sid in (select s2.sid from sailors s2,reserves r2,boats b2 where s2.sid=r2.sid and r2.bid=b2.bid and b2.color='green')
-21)	SELECT S.sname
+```
+21)  Find the names of sailors who have reserved all boats.
+```sql
+SELECT S.sname
 FROM Sailors S
 WHERE NOT EXISTS (( SELECT B.bid
 FROM Boats B )
@@ -102,6 +121,8 @@ EXCEPT
 (SELECT R. bid
 FROM Reserves R
 WHERE R.sid = S.sid ))
+```
+### AGGREGATE OPERATORS
 22)	select avg(s.age) from sailors s
 
 23)	select avg(s.age) from sailors s where s.rating=10;
