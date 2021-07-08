@@ -41,7 +41,7 @@ Q25) Count the number of sailor. <br>
 Q26) Count the number of different sailor names. <br>
 Q27) Find the names of sailors who are older than the oldest sailor with a rating of 10. <br>
 ### The GROUP BY and HAVING Clauses
-Q28) Find the age of the youngest sailor for each rating level.
+Q28) Find the age of the youngest sailor for each rating level.<br>
 Q29) Find the age of the youngest sailor who is eligible to vote (i.e., is at least 18 years old) for each rating level with at least two such sailors.<br>
 ### More Examples of Aggregate Queries
 Q30) For each red boat; find the number of reservations for this boat. <br>
@@ -49,9 +49,11 @@ Q31) Find the average age of sailors for each rating level that has at least two
 Q32) <ol><li>  Find the average age of sailors who are of voting age (i.e., at least 18 years old) for each rating level that has at least two sailors </li>
 <li> Find the average age of sailors who are of voting age (i.e., at least 18 years old) for each rating level that has at least two such sailors </li></ol>
 Q33) Find those ratings for which the average age of sailors is the minimum over all ratings. <br>
+
 ### COMPLEX INTEGRITY CONSTRAINTS IN SQL
 Q34) to ensure that rating must be an integer in the range 1 to 10, <br>
 Q35) a new domain using the CREATE DOMAIN statement, which uses CHECK constraints. <br>
+
 ### Assertions: ICs over Several Tables
 Q36) to enforce the constraint that the number of boats plus the number of sailors should be less than 100. (This condition Illight be required, say, to qualify as a 'smaIl'          sailing club.) <br>
 
