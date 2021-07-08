@@ -7,11 +7,12 @@ For practicing the SQL commands lets take the Boat Reservation Database from **D
 <br>
 This example consists of 3 tables : **Sailors**,**Boats** and **Reserves**
 <br>
-**Q1) Find the names and ages of all sailors.
-Q2) Find all sailors with a rating above 7.
-Q3) Find the names of sailors who have reserved boat number 103.
-Q4) Find the names of sailors who have reserved a Red boat.
-Q5) Find the colors of boats reserved by Lubber.
+<pre>
+**Q1) Find the names and ages of all sailors. <br>
+Q2) Find all sailors with a rating above 7. <br>
+Q3) Find the names of sailors who have reserved boat number 103. 
+Q4) Find the names of sailors who have reserved a Red boat. 
+Q5) Find the colors of boats reserved by Lubber. 
 Q6) Find the names of sailors who have reserved at least one boat.
 Q7) Compute increments for the ratings of persons who have sailed two different boats on the same day.
 Q8) Find the ages of sailors whose name begins and ends with B and has at least three characters.
@@ -64,3 +65,4 @@ of boats plus the number of sailors should be less than 100. (This condition
 Illight be required, say, to qualify as a 'smaIl' sailing club.)**
 
 ## Examples of Triggers in SQL
+</pre>
