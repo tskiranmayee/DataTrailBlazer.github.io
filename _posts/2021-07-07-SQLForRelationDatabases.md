@@ -60,4 +60,4 @@ Q36) to enforce the constraint that the number of boats plus the number of sailo
 
 ### Examples of Triggers in SQL
 
-[Please Find Answers here]({{ site.baseurl }}{% link _posts/2021-07-07-SQLBoatReservationQueriesAnswers.md %}))
+[Please Find Answers here]({% link _posts/2021-07-07-SQLBoatReservationQueriesAnswers.md %})
