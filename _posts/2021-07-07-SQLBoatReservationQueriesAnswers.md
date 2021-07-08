@@ -177,6 +177,7 @@ select s.rating,avg(s.age) as AvgAge from sailors s group by s.rating having cou
 select s.rating,avg(s.age) as AvgAge from sailors s where s.age>=18 group by s.rating having count(*)>1;
 ```
 ### COMPLEX INTEGRITY CONSTRAINTS IN SQL
+
 34) Ensure that rating must be an integer in the range 1 to 10
 ```sql
 CREATE TABLE Sailors ( sid INTEGER, sname CHAR(10), rating INTEGER, age REAL, PRIMARY KEY (sid),
