@@ -46,15 +46,14 @@ Q29) Find the age of the youngest sailor who is eligible to vote (i.e., is at le
 ### More Examples of Aggregate Queries
 Q30) For each red boat; find the number of reservations for this boat. <br>
 Q31) Find the average age of sailors for each rating level that has at least two sailors. <br>
-Q32) a.  Find the average age of sailors who are of voting age (i.e., at least 18 years old) for each rating level that has at least two sailors <br>
-b. Find the average age of sailors who are of voting age (i.e., at least 18 years old) for each rating level that has at least two such sailors <br>
+Q32) <ol><li>  Find the average age of sailors who are of voting age (i.e., at least 18 years old) for each rating level that has at least two sailors </li>
+<li> Find the average age of sailors who are of voting age (i.e., at least 18 years old) for each rating level that has at least two such sailors </li></ol>
 Q33) Find those ratings for which the average age of sailors is the minimum over all ratings. <br>
 ### COMPLEX INTEGRITY CONSTRAINTS IN SQL
 Q34) to ensure that rating must be an integer in the range 1 to 10, <br>
 Q35) a new domain using the CREATE DOMAIN statement, which uses CHECK constraints. <br>
 ### Assertions: ICs over Several Tables
-Q36) to enforce the constraint that the number of boats plus the number of sailors should be less than 100. (This condition
-Illight be required, say, to qualify as a 'smaIl' sailing club.) <br>
+Q36) to enforce the constraint that the number of boats plus the number of sailors should be less than 100. (This condition Illight be required, say, to qualify as a 'smaIl'          sailing club.) <br>
 
 ### Examples of Triggers in SQL
 
