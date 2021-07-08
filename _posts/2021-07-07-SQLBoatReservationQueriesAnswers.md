@@ -144,14 +144,41 @@ select avg(s.age) from sailors s where s.rating=10;
 select count(*) from sailors s;
 ```
 
-26)	select distinct count(*) from sailors s;
+26)	Count the number of different sailor names.
+```sql 
+select distinct count(*) from sailors s;
+```
 
-27)	select s1.sname,s1.age from sailors s1 where s1.age>(select max(s2.age) from sailors s2 where s2.rating=10);
-
-28)	select s1.rating,min(s1.age) from sailors s1 group by s1.rating ;
-29)	select s1.rating,min(s1.age) from sailors s1 where s1.age>18 group by s1.rating having count(*)>=2 ;
-30)	select b.bid,count(*) as NoOfReservations from reserves r,boats b where r.bid=b.bid and b.color='red' group by b.bid
-31)	select s.rating,avg(s.age) as AvgAge from sailors s group by s.rating having count(*)>1;
-32)	select s.rating,avg(s.age) as AvgAge from sailors s where s.age>=18 group by s.rating having count(*)>1;
-33)	 CREATE TABLE Sailors ( sid INTEGER, sname CHAR(10), rating INTEGER, age REAL, PRIMARY KEY (sid),
+27)	Find the names of sailors who are older than the oldest sailor with a rating of 10.
+```sql 
+select s1.sname,s1.age from sailors s1 where s1.age>(select max(s2.age) from sailors s2 where s2.rating=10);
+```
+### The GROUP BY and HAVING Clauses
+28)	Find the age of the youngest sailor for each rating level.
+```sql 
+select s1.rating,min(s1.age) from sailors s1 group by s1.rating ;
+```
+29) Find the age of the youngest sailor who is eligible to vote (i.e., is at least 18 years old) for each rating level with at least two such sailors.
+```sql
+select s1.rating,min(s1.age) from sailors s1 where s1.age>18 group by s1.rating having count(*)>=2 ;
+```
+### More Examples of Aggregate Queries
+30)	 For each red boat, find the number of reservations for this boat.
+```sql
+select b.bid,count(*) as NoOfReservations from reserves r,boats b where r.bid=b.bid and b.color='red' group by b.bid
+```
+31) Find the average age of sailors for each rating level that has at least two sailors.
+```sql
+select s.rating,avg(s.age) as AvgAge from sailors s group by s.rating having count(*)>1;
+```
+32)
+* Find the average age of sailors who are of voting age (i.e., at least 18 years old) for each rating level that has at least two sailors.
+```sql
+select s.rating,avg(s.age) as AvgAge from sailors s where s.age>=18 group by s.rating having count(*)>1;
+```
+### COMPLEX INTEGRITY CONSTRAINTS IN SQL
+34) Ensure that rating must be an integer in the range 1 to 10
+```sql
+CREATE TABLE Sailors ( sid INTEGER, sname CHAR(10), rating INTEGER, age REAL, PRIMARY KEY (sid),
 CHECK (rating >= 1 AND rating <= 10 ))	
+```
