@@ -46,7 +46,8 @@ Q29) Find the age of the youngest sailor who is eligible to vote (i.e., is at le
 ### More Examples of Aggregate Queries
 Q30) For each red boat; find the number of reservations for this boat. <br>
 Q31) Find the average age of sailors for each rating level that has at least two sailors. <br>
-Q32) * Find the average age of sailors who are of voting age (i.e., at least 18 years old) for each rating level that has at least two sailors.
+Q32) 
+* Find the average age of sailors who are of voting age (i.e., at least 18 years old) for each rating level that has at least two sailors.
 * Find the average age of sailors who are of voting age (i.e., at least 18 years old) for each rating level that has at least two such sailors.
 Q33) Find those ratings for which the average age of sailors is the minimum over all ratings. <br>
 
