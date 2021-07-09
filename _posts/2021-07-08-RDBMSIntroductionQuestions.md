@@ -1,3 +1,7 @@
+---
+layout: post
+title: Relation Databases Management Introduction Questions
+---
 ## Define the following
 #### Reference: Fundamentals of Database Systems - Elmasri & Navathe and Database Management System - Korth
 * Data Abstraction
