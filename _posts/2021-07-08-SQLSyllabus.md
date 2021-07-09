@@ -3,7 +3,7 @@ layout: post
 title: SQL Trail Blazed
 ---
 
-### Follow the SQL Trail:
+### Follow the SQL Trail
 ### Introduction
 * Relational Model
 * Keys and Constraints
