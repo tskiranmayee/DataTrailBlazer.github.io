@@ -1,4 +1,5 @@
-## Review Questions from Fundamentals of Database Systems - Elmasri & Navathe and Database Management System - Korth
+## Review Questions 
+#### Reference: Fundamentals of Database Systems - Elmasri & Navathe and Database Management System - Korth
 ### Define the following:
 * Data Abstraction
 * Data model
