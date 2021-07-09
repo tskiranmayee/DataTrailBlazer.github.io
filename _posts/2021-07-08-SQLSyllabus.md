@@ -14,11 +14,13 @@ title: SQL Trail Blazed
   * PL/SQL
   * Triggers
   * Indexes
+  
 ### Database Design
 * ER Model
 * ER to Relational Model
 * Functional Dependency
 * Normalization
+
 ### Transactions
 * Concurrency control
 * Locking Protocol
