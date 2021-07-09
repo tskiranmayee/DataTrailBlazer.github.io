@@ -1,1 +1,0 @@
-### Data Defination Langinage(DDL)
