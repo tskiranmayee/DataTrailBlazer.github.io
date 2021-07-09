@@ -12,6 +12,7 @@ title: SQL Trail Blazed
 * SQL Basics
 * Advanced SQL
   * PL/SQL
+  * Stored Procedures
   * Triggers
   * Indexes
   * Windows Functions
