@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Answers to Boat Reservation Database Table
+title: Answers to Boat Reservation Database Queries
 ---
 ### Basic Quieres
 1) Find the names and ages of all sailors.	
