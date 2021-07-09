@@ -1,11 +1,11 @@
 ---
 layout: post
-title: SQL for Relation Databases
+title: SQL Practice: Boat Reservation Database Queries
 ---
 
 For practicing the SQL commands lets take the Boat Reservation Database from **Database Management Systems by Raghu Ramamkrishna**.
 <br>
-This example consists of 3 tables : **Sailors**,**Boats** and **Reserves**
+This example consists of 3 tables : **Sailors**, **Boats** and **Reserves**
 
 ### Basic Quieres
 Q1) Find the names and ages of all sailors. <br>
