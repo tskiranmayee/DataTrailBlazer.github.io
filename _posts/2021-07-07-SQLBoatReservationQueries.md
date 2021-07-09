@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SQL Practice: Boat Reservation Database Queries
+title: SQL Practice - Boat Reservation Database Queries
 ---
 
 For practicing the SQL commands lets take the Boat Reservation Database from **Database Management Systems by Raghu Ramamkrishna**.
