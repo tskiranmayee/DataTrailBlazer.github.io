@@ -14,6 +14,7 @@ title: SQL Trail Blazed
   * PL/SQL
   * Triggers
   * Indexes
+  * Windows Functions
   
 ### Database Design
 * ER Model
