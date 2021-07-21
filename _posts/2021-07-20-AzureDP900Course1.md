@@ -1,3 +1,7 @@
+---
+layout: post
+title: Azure DP-900 Course 1
+---
 ## Explore Core Data Concepts in Microsoft Azure
 ### Module 1: Core Data Concepts and Roles
 * Core data concepts and job roles in the world of data. 
