@@ -1,3 +1,7 @@
+---
+layout: post
+title: Azure DP-900 Course 4
+---
 ## Modern Data Warehouse Analytics in Microsoft Azure
 ### Module 1
 * Data Ingestion, Storage, and Processing in Microsoft Azure
