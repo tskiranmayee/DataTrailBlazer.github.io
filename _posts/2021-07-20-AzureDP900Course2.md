@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Azure DP-900 Course 2
