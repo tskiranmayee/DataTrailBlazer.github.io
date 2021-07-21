@@ -1,3 +1,9 @@
+
+---
+layout: post
+title: Azure DP-900 Course 2
+---
+
 ## Microsoft Azure SQL
 ### Explore the characteristics of relational data
 ### Define 
