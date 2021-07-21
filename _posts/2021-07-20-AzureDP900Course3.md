@@ -1,3 +1,7 @@
+---
+layout: post
+title: Azure DP-900 Course 3
+---
 ## Microsoft Azure Cosmos DB
 #### Use-cases and management benefits of using Azure Table Storage
 #### Use-cases and management benefits of using Azure Blob Storage
