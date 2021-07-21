@@ -1,3 +1,7 @@
+---
+layout: post
+title: SQL Practice - Oracle Emp Table SQL Queires 1-50
+---
 #### The Jupyter notebook was used and SQLAlchemy library helped connecting with mySQL
 
 
