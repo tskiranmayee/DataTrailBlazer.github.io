@@ -1,3 +1,7 @@
+---
+layout: post
+title: SQL Practice - Oracle Emp Table SQL Queires 1-50
+---
 ```python
 import sqlalchemy
 ```
