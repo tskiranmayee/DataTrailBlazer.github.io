@@ -5,7 +5,8 @@ highlighter:      rouge
 
 # Permalinks
 permalink:        pretty
-remote-theme: hyde
+theme: jekyll-theme-adobe-hyde
+gem "jekyll-theme-adobe-hyde"
 
 # Setup
 title:            Trail Blazed
