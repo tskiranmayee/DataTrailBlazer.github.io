@@ -6,7 +6,7 @@ highlighter:      rouge
 # Permalinks
 permalink:        pretty
 theme: minima
-remote_theme: adobe/hyde-theme@v1.0.0
+remote_theme: adobe/hyde-theme
 
 
 # Setup
