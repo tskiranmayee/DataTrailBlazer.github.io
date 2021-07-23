@@ -5,9 +5,7 @@ highlighter:      rouge
 
 # Permalinks
 permalink:        pretty
-theme: minima
-remote_theme: adobe/hyde-theme
-
+remote_theme: benbalter/retlab
 
 # Setup
 title:            Trail Blazed
