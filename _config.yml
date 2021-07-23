@@ -5,7 +5,8 @@ highlighter:      rouge
 
 # Permalinks
 permalink:        pretty
-remote_theme: adobe/hyde-theme@v1.0.0
+theme:
+  - hyde
 # Setup
 title:            Trail Blazed
 tagline:          'A path for aspiring Data Engineers'
