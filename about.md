@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Syllabus
+title: About
 ---
 
 <p class="message">
