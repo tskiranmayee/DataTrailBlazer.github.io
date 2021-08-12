@@ -1,3 +1,8 @@
+
+---
+layout: post
+title: Postgres DDL DML Statements
+---
 ### Import postgresql
 
 
