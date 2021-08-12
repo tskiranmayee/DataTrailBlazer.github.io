@@ -4,7 +4,7 @@ title: Syllabus
 ---
 To become a Data Engineer, one should develop a number of skills. This website will provide walk you through all of them.
 ### Stage 1
-* [SQL for Relation Databases]
+* [SQL for Relation Databases]({{ site.baseurl }}{% post_url ../_posts/2021-07-08-SQLSyllabus %})
 * T-SQL
 * Introduction to Python Programming
 ### Stage 2
