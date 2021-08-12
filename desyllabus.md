@@ -5,11 +5,11 @@ title: Syllabus
 To become a Data Engineer, one should develop a number of skills. This website will provide walk you through all of them.
 ### Stage 1
 * [SQL for Relation Databases]({{ site.baseurl }}{% post_url ../_posts/2021-07-08-SQLSyllabus %})
-* T-SQL
+* PL/SQL
 * Introduction to Python Programming
 ### Stage 2
-* SQL for Datawarehousing
-* SSIS
+* PostgresSQL
+* Cassandra
 * Python for Data Engineering
 ### Stage 3
 * Introduction to Azure and AWS Cloud for Data Engineers
@@ -20,6 +20,6 @@ To become a Data Engineer, one should develop a number of skills. This website w
 * Hive
 * MongoDB
 ### Stage 5
-* Data Engineering on Azure Cloud and AWS
+* Airflow
   
 
