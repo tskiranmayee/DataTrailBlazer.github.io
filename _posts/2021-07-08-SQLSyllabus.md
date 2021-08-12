@@ -32,7 +32,7 @@ title: SQL Trail Blazed
 
 ### Practice Excercise
 * [Boat Reservation System]({{ site.baseurl }}{% post_url ../_posts/2021-07-07-SQLBoatReservationQueries %})
-* [Oracle Emp table]({{ site.baseurl }}{% post_url ../_posts/2021-08-12-OracleEmpSyllabus.md%})
+* [Oracle Emp table]({{ site.baseurl }}{% post_url ../_posts/2021-08-12-OracleEmpSyllabus%})
 
   
   
