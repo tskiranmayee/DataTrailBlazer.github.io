@@ -25,7 +25,7 @@ RENAME  – Rename an object existing in the database.
 ### Create Tables in Music DB
 #### The database is from http://tahaghoghi.com/LearningMySQL/downloads.php
 #### Exported all the tables from MySql to  csv files
-### ER Diagram
+
 
 
 
@@ -38,7 +38,7 @@ Image(filename = PATH + "MusicDB.jpg", width=500, height=500)
 
 
 
-![jpeg](output_4_0.jpeg)
+![ER Diagram](https://github.com/TrailBlazed/trailblazed.github.io/blob/gh-pages/_posts/output_4_0.jpeg)
 
 
 
