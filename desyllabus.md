@@ -8,7 +8,7 @@ To become a Data Engineer, one should develop a number of skills. This website w
 * PL/SQL
 * Introduction to Python Programming
 ### Stage 2
-* PostgresSQL
+* PostgresSQL ({{ site.baseurl }}{% post_url ../_posts/2021-08-12-PostgresDDLDML %})
 * Cassandra
 * Python for Data Engineering
 ### Stage 3
