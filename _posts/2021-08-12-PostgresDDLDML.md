@@ -77,16 +77,7 @@ cur.execute(sqlCreatedb)
 ```
 
 
-    ---------------------------------------------------------------------------
-
-    DuplicateDatabase                         Traceback (most recent call last)
-
-    <ipython-input-140-4dc8d56c3b72> in <module>
-    ----> 1 cur.execute(sqlCreatedb)
-    
-
-    DuplicateDatabase: database "musicdb" already exists
-    
+        
 
 
 ### Show Database
