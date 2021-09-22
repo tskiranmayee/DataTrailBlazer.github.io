@@ -38,7 +38,7 @@ Image(filename = PATH + "MusicDB.jpg", width=500, height=500)
 
 
 
-![ER Diagram](https://github.com/TrailBlazed/trailblazed.github.io/blob/gh-pages/_posts/output_4_0.jpeg)
+![ER Diagram](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/output_4_0.jpeg)
 
 
 
