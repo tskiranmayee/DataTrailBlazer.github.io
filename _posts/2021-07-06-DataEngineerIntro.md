@@ -12,7 +12,7 @@ To become a Data Engineer, one should develop a number of skills. This website w
 * SQL for Datawarehousing
 * Python for Data Engineering
 ### Stage 3
-* [DP-900 Azure Data Fundamentals]({{ site.baseurl }}{% post_url ../_posts/2021-07-20-AzureDP900Course %})
+* [DP-900 Azure Data Fundamentals]({{ site.baseurl }}{% post_url ../_posts/2021-07-20-AzureDP900Course1 %})
 * AWS Cloud Practitioner
 
 ### Stage 4
