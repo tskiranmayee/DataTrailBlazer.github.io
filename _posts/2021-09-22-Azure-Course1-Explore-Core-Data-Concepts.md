@@ -24,5 +24,5 @@ Data is a collection of facts such as numbers, descriptions, and observations us
 #### Semi-structured data
  It is information that doesn't reside in a relational database but still has some structure to it.
  **Example:** JavaScript Object Notation (JSON)
-![JSON](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/12-json.png) 
+![JSON](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/12-json.PNG) 
  
