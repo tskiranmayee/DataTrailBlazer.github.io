@@ -38,7 +38,7 @@ Image(filename = PATH + "MusicDB.jpg", width=500, height=500)
 
 
 
-![ER Diagram](output_4_0.jpeg)
+![ER Diagram](/_posts/output_4_0.jpeg)
 
 
 
