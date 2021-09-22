@@ -10,18 +10,15 @@ To become a Data Engineer, one should develop a number of skills. This website w
 * Introduction to Python Programming
 ### Stage 2
 * SQL for Datawarehousing
-* SSIS
 * Python for Data Engineering
 ### Stage 3
-* Introduction to Azure and AWS Cloud for Data Engineers
-* Power BI for Data Engineers
+* [DP-900 Azure Data Fundamentals]({{ site.baseurl }}{% post_url ../_posts2021-07-20-AzureDP900Course %})
+* AWS Cloud Practitioner
+
 ### Stage 4
-* Hadoop
-* Spark
-* Hive
-* MongoDB
-### Stage 5
-* Data Engineering on Azure Cloud and AWS
+* DP-203
+* Udacity AWS Data Engineering
+
   
   
   
