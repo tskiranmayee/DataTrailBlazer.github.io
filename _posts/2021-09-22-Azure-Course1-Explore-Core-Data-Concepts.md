@@ -19,10 +19,10 @@ Data is a collection of facts such as numbers, descriptions, and observations us
 1. **Tabular** data that is represented by **rows and columns** in a database.
 2. Databases that hold tables in this form are called **relational databases** (the mathematical term relation refers to an organized set of data held as a table). 
 **Note**: Each row in a table has the same set of columns.
-![Relational Tables](/assets/images/11-tabular-diagram.png)
+![Relational Tables](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/11-tabular-diagram.png)
 
 #### Semi-structured data
  It is information that doesn't reside in a relational database but still has some structure to it.
  **Example:** JavaScript Object Notation (JSON)
-![JSON](/assets/images/12-json.png) 
+![JSON](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/12-json.png) 
  
