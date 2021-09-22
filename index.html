@@ -1,37 +1,21 @@
 ---
 layout: default
-title: Home
+title: Topics
 ---
+To become a Data Engineer, one should develop a number of skills. This website will provide walk you through all of them.
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+### Stage 1
+* [SQL for Relation Databases]({{ site.baseurl }}{% post_url ../_posts/2021-07-08-SQLSyllabus %})
+* [PostgresSQL]({{ site.baseurl }}{% post_url ../_posts/2021-08-12-PostgresDDLDML %})
+* PgSQL
+* Python Programming
+* SQL for Datawarehousing
+* Python for Data Engineering
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+### Stage 2
+* [DP-900 Azure Data Fundamentals]({{ site.baseurl }}{% post_url ../_posts/2021-07-20-Azure-DP900-Unit-1 %})
+* AWS Cloud Practitioner
+### Stage 3
+* DP-203
+* Udacity AWS Data Engineering
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
