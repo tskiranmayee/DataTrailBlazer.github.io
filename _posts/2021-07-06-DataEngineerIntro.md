@@ -17,7 +17,7 @@ To become a Data Engineer, one should develop a number of skills. This website w
 
 ### Stage 4
 * DP-203
-* Udacity AWS Data Engineering
+* Udacity AWS Data Engineering course
 
   
   
