@@ -53,9 +53,9 @@ Data is a collection of facts such as numbers, descriptions, and observations us
 ##### Analytical System
 * Capturing raw data, and using it to generate insights for decision-making.
 ###### Tasks:
-**Data ingestion**: the process of capturing the raw data. The repository could be a file store, a document database, or even a relational database.
-**Data transformation**: Filter out anomolies, required tranformation like date or address etc., perform aggregation like,sum and other KPIs(Key Performance Indicators)
-**Data querying:** Query to analyse the data.
+**Data ingestion**: the process of capturing the raw data. The repository could be a file store, a document database, or even a relational database. <br>
+**Data transformation**: Filter out anomolies, required tranformation like date or address etc., perform aggregation like,sum and other KPIs(Key Performance Indicators) <br>
+**Data querying:** Query to analyse the data. <br>
 **Data visualization:**
 * Visualizing the data can often be useful as a tool for examining data.
 * Charts such as bar charts, line charts, plot results on geographical maps, pie charts, or illustrate how data changes over time.
