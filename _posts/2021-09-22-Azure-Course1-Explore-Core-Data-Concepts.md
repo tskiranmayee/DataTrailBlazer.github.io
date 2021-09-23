@@ -15,13 +15,13 @@ Data is a collection of facts such as numbers, descriptions, and observations us
 * Semi-structured, or
 * Unstructured.
 
-#### Structured data
+### Structured data
 1. **Tabular** data that is represented by **rows and columns** in a database.
 2. Databases that hold tables in this form are called **relational databases** (the mathematical term relation refers to an organized set of data held as a table). 
 **Note**: Each row in a table has the same set of columns.
 ![Relational Tables](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/11-tabular-diagram.png)
 
-#### Semi-structured data
+### Semi-structured data
 ##### JSON
 * It is information that doesn't reside in a relational database but still has some structure to it.
  **Example:** JavaScript Object Notation (JSON)
@@ -29,7 +29,7 @@ Data is a collection of facts such as numbers, descriptions, and observations us
 ##### Key-Value Pair: 
 * A key-value database stores Associative arrays. 
 * A key-value database stores data as a single collection without structure or relation.
-#### Unstructured data
+### Unstructured data
 ##### Graph Database
 * A graph contains nodes (information about objects), and edges (information about the relationships between objects). 
 
