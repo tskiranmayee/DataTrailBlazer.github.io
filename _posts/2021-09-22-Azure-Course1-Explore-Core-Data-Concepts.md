@@ -22,7 +22,14 @@ Data is a collection of facts such as numbers, descriptions, and observations us
 ![Relational Tables](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/11-tabular-diagram.png)
 
 #### Semi-structured data
- It is information that doesn't reside in a relational database but still has some structure to it.
+##### JSON
+* It is information that doesn't reside in a relational database but still has some structure to it.
  **Example:** JavaScript Object Notation (JSON)
 ![JSON](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/12-json.PNG) 
- 
+##### Key-Value Pair: 
+* A key-value database stores Associative arrays. 
+* A key-value database stores data as a single collection without structure or relation.
+#### Unstructured data
+##### Graph Database
+* A graph contains nodes (information about objects), and edges (information about the relationships between objects). 
+
