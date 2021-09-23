@@ -1,4 +1,7 @@
-### AWS Cloud Practitioner Notes
+---
+layout: post
+title: AWS Cloud Practitioner Notes
+---
 ##### [1.The Cloud]({{ site.baseurl }}{% post_url ../_posts/2021-09-23-aws-ccp-ch1-thecloud %})
 ##### 2.Understanding Your AWS Account
 ##### 3.Getting Support on AWS
