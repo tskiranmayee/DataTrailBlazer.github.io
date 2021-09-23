@@ -57,7 +57,7 @@ title: Chapter 5 - Securing Your AWS Resources
 * Important for Application Services not Users
 * "Trusted Entity"
 * Entity -> AWS resources (like EC2) -> 3rd party federated identify provider(like Google)
-* 
+
 
 ***
 ## Providing Federated Access
