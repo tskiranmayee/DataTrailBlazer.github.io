@@ -14,7 +14,7 @@ To become a Data Engineer, one should develop a number of skills. This website w
 
 ### Stage 2
 * [DP-900 Azure Data Fundamentals]({{ site.baseurl }}{% post_url ../_posts/2021-07-20-Azure-DP900-Unit-1 %})
-* AWS Cloud Practitioner
+* [AWS Cloud Practitioner]({{ site.baseurl }}{% post_url ../_posts/aws-ccp-syllabus %})
 ### Stage 3
 * DP-203
 * Udacity AWS Data Engineering
