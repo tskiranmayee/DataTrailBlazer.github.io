@@ -13,7 +13,7 @@ tagline:          'A path for aspiring Data Engineers'
 description:      'This website will walk you through the roadmap of Cloud Data Engineer.'
 url:              https://trailblazed.github.io/
 baseurl:          "https://trailblazed.github.io/"
-markdown:         kramdown
+markdown:         redcarpet
 author:
   name:           'Tadepalli Sarada Kiranmayee'
   url:            https://www.linkedin.com/in/tadepalli-sarada-kiranmayee-082aba57/
