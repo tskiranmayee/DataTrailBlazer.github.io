@@ -21,7 +21,7 @@ title: SQL Trail Blazed
 * ER Model
 * ER to Relational Model
 * Functional Dependency
-* Normalization
+* [Normalization]({{ site.baseurl }}{% post_url ../_posts/2021-09-24-SQL-Normalization %})
 
 ### Transactions
 * Concurrency control
