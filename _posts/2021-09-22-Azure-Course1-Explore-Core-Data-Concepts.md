@@ -60,3 +60,5 @@ Data is a collection of facts such as numbers, descriptions, and observations us
 * Visualizing the data can often be useful as a tool for examining data.
 * Charts such as bar charts, line charts, plot results on geographical maps, pie charts, or illustrate how data changes over time.
 * Microsoft Power BI - rich graphical representation of data.
+### Identify types of data and data storage
+#### The characteristics of relational and non-relational data
