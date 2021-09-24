@@ -1,1 +1,5 @@
-Description of normalization
+---
+layout: post
+title: Description of normalization
+---
+
