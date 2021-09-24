@@ -49,7 +49,7 @@ Data is a collection of facts such as numbers, descriptions, and observations us
 ### Data Processing Solutions
 ##### Transactional System (OLTP - Online Transactional Processing)
 * It records Transactions ( small,discrete unit of work)
-*  Splitting tables out into separate groups of columns like this is called **normalization**
+*  Splitting tables out into separate groups of columns like this is called [normalization]({{ site.baseurl }}{% post_url ../_posts/2021-09-24-SQL-Normalization %})
 *  Advantage: Normalization can enable a transactional system to cache much of the information required to perform transactions in memory, and speed throughput.
 * Disadvantage:  normalized tables will frequently need to join the data held across several tables back together again. This can make it difficult for business users(Analysis) who might need to examine the data.
 ##### Analytical System
