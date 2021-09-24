@@ -22,5 +22,5 @@ title: Description of normalization
 ##### 3NF
 1. Eliminate fields that do not depend on the key.
 
-![Normazlization Example](https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description)
+[Normazlization Example](https://docs.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description)
 
