@@ -6,6 +6,7 @@ title: Explore Core Data Concepts
 * Identify how data is defined and stored
 * Identify types of data and data storage
 * Describe and differentiate batch and streaming data
+
 ***
 ## Identify how data is defined and stored
 ***
