@@ -77,15 +77,12 @@ to make informed decisions
 * SQL Server Management Studio -> create and query tables visually, but you can also create your own SQL scripts manually.
 * **sqlcmd utility** (Command Line) to connect to Microsoft SQL Server and Azure SQL Database, and run ad-hoc queries and commands.
 * SQL server professional -> data manipulation tool might be Transact-SQL.
-* Azure Databricks -> a data analytics platform optimized for the Microsoft Azure cloud services platform. Azure Databricks offers three environments for developing data intensive applications: Databricks SQL, 
-  Databricks Data Science & Engineering, and Databricks Machine Learning.
+* Azure Databricks -> a data analytics platform optimized for the Microsoft Azure cloud services platform. Azure Databricks offers three environments for developing data intensive applications: Databricks SQL, Databricks Data Science & Engineering, and Databricks Machine Learning.
 * Azure HDInsight to generate and test predictive models. 
   * Azure HDInsight is a cloud distribution of Hadoop components. Azure HDInsight makes it easy, fast, and cost-effective to process massive amounts of data. You can use the most popular open-source frameworks such as Hadoop, Spark, Hive, LLAP, Kafka, Storm, R, and more. With these frameworks, you can enable a broad range of scenarios such as extract, transform, and load (ETL),
     data warehousing, machine learning, and IoT.
 *  The non-relational field -> Azure Cosmos DB. 
 *  To manipulate and query the Cosmos DB data -> HiveQL, R, or Python.
-* 
-
 
 
 
