@@ -140,3 +140,6 @@ and enabling advanced analytics** capabilities through reports and visualization
 * Your data might be held somewhere local such as an Excel spreadsheet, or in a collection of cloud-based and on-premises databases, or some other set of data sources. 
 * Power BI -> lets you easily connect to your data sources, discover what's important in that data, and share your findings with others in the organization.
 
+![benefits and tradeoffs when running a database management system](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/4-choose-platform.png)
+
+
