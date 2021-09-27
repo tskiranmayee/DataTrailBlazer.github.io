@@ -85,3 +85,19 @@ title: Describe concepts of non-relational data
 * Storing data for backup and restore, disaster recovery, and archiving
 * Storing data for analysis by an on-premises or Azure-hosted service
 
+##### Azure Blob storage include:
+
+* **Versioning**. You can maintain and restore earlier versions of a blob.
+
+* **Soft delete** This feature enables you to recover a blob that has been removed or overwritten, by accident or otherwise.
+
+* **Snapshots** A snapshot is a read-only version of a blob at a particular point in time.
+
+* **Change Feed** The change feed for a blob provides an ordered, read-only, record of the updates made to a blob. You can use the change feed to monitor these changes, and perform operations such as:
+
+    * Update a secondary index, synchronize with a cache, search-engine, or any other content-management scenarios.
+    * Extract business analytics insights and metrics, based on changes that occur to your objects, either in a streaming manner or batched mode.
+    * Store, audit, and analyze changes to your objects, over any period of time, for security, compliance or intelligence for enterprise data management.
+    * Build solutions to back up, mirror, or replicate object state in your account for disaster management or compliance.
+    * Build connected application pipelines that react to change events or schedule executions based on created or changed objects.
+
