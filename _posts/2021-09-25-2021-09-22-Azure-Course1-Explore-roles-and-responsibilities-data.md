@@ -90,3 +90,19 @@ to make informed decisions
 * **Maximize the value** of their data assets.
 * **Designing and building scalable models, cleaning and transforming data, 
 and enabling advanced analytics** capabilities through reports and visualizations.
+
+###### Tasks and Responsibilities
+* Making large or complex data more accessible, understandable, and usable.
+* Creating charts and graphs, histograms, geographical maps, and other visual models that help to explain the meaning of large volumes of data, and isolate areas of interest.
+* Transforming, improving, and integrating data from many sources, depending on the business requirements.
+* Combining the data result sets across multiple sources. For example, combining sales data and weather data provides a useful insight into how weather influenced sales of certain products such as ice creams.
+* Finding hidden patterns using data.
+* Delivering information in a useful and appealing way to users by creating rich graphical dashboards and reports.
+
+###### Common data visualization tools
+* Microsoft Office Apps such as **Microsoft Excel** for creating rich visual reports.
+* **Microsoft Power BI**, a powerful visualization platform, to create rich, graphical dashboards and reports over data that can vary dynamically.
+* Power BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. 
+* Your data might be held somewhere local such as an Excel spreadsheet, or in a collection of cloud-based and on-premises databases, or some other set of data sources. 
+* Power BI -> lets you easily connect to your data sources, discover what's important in that data, and share your findings with others in the organization.
+
