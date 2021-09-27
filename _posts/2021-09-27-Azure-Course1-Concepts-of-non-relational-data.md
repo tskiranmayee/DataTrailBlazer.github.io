@@ -163,5 +163,28 @@ title: Describe concepts of non-relational data
           * The number of versions (K) of the item
           * The time interval (T) reads might lag behind the writes
     * Session -> a single client session reads are guaranteed to honor the consistent-prefix, monotonic reads, monotonic writes, read-your-writes, and write-follows-reads guarantees.
-    * consistent prefix -> 
-    *  and eventual.
+    * Consistent prefix -> updates that are returned contain some prefix of all the updates, with no gaps. Consistent prefix consistency level guarantees that reads never see out-of-order writes.
+    *  Eventual-> 1. There's no ordering guarantee for reads. In the absence of any further writes, the replicas eventually converge.
+                  2. Weakest form of Consistency.
+
+* Finding out the probability that your clients may get strong and consistent reads for your workloads by looking at the **Probabilistically Bounded Staleness (PBS)** metric. 
+#### Scenarios
+* IoT and telematics
+* Retail and marketing.
+* Gaming. 
+* Web and mobile applications.
+### Azure Files
+* fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol or Network File System (NFS) protocol.
+#### Why Azure Files is useful
+* Replace or supplement on-premises file servers
+* "Lift and shift" applications
+* Simplify cloud development
+* Diagnostic share
+* Dev/Test/Debug
+* Containerization
+#### Key benefits
+* Shared access
+* Fully managed
+* Scripting and tooling
+* Resiliency
+* Familiar programmability
