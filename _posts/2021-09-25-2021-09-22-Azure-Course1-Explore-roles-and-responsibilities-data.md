@@ -83,6 +83,8 @@ to make informed decisions
     data warehousing, machine learning, and IoT.
 * **Azure Data Factory**  is a managed cloud service that's built for these complex hybrid extract-transform-load (ETL), extract-load-transform (ELT), and data integration projects.
   * It is the cloud-based ETL and data integration service that allows you to create data-driven workflows for orchestrating data movement and transforming data at scale.
+  *  Create and schedule data-driven workflows (called pipelines) that can ingest data from disparate data stores. 
+  *  Build complex ETL processes that transform data visually with data flows or by using compute services such as Azure HDInsight Hadoop, Azure Databricks, and Azure SQL Database.
 *  The non-relational field -> Azure Cosmos DB. 
 *  To manipulate and query the Cosmos DB data -> HiveQL, R, or Python.
 
