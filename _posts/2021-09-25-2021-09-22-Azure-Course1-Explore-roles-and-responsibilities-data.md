@@ -82,6 +82,7 @@ to make informed decisions
   * Azure HDInsight is a cloud distribution of Hadoop components. Azure HDInsight makes it easy, fast, and cost-effective to process massive amounts of data. You can use the most popular open-source frameworks such as Hadoop, Spark, Hive, LLAP, Kafka, Storm, R, and more. With these frameworks, you can enable a broad range of scenarios such as extract, transform, and load (ETL),
     data warehousing, machine learning, and IoT.
 * **Azure Data Factory**  is a managed cloud service that's built for these complex hybrid extract-transform-load (ETL), extract-load-transform (ELT), and data integration projects.
+  * It is the cloud-based ETL and data integration service that allows you to create data-driven workflows for orchestrating data movement and transforming data at scale.
 *  The non-relational field -> Azure Cosmos DB. 
 *  To manipulate and query the Cosmos DB data -> HiveQL, R, or Python.
 
