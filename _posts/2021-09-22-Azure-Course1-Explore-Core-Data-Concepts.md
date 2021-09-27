@@ -143,4 +143,4 @@ Data is a collection of facts such as numbers, descriptions, and observations us
 ### 
  
 
-![Roles and Responsibitities]({{ site.baseurl }}{% post_url ../_posts/2021-09-25-2021-09-22-Azure-Course1-Explore-roles-and-responsibilities-data %})
+[Roles and Responsibitities]({{ site.baseurl }}{% post_url ../_posts/2021-09-25-2021-09-22-Azure-Course1-Explore-roles-and-responsibilities-data %})
