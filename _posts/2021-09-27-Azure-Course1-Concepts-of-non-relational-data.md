@@ -45,4 +45,43 @@ title: Describe concepts of non-relational data
 * Helps to protect your data(configure security and role-based access control)
 
 ##### Azure Blob storage
+* Store massive amounts of unstructured data, or blobs, in the cloud.
+* Create blobs using an Azure storage account.
+* **Block blobs** -> 1. A block blob is handled as a set of blocks(100MB)
+                2. 50000 blocks 
+                3. Max of 4.7TB.
+                4. Smallest amount of data that can be read or written as an individual unit.
+                5. Best used to store discrete, large, binary objects that change infrequently.
+ * **Page blobs** -> 1. collection of fixed size 512-byte pages.
+                     2. support random read and write operations
+                     3. hold up to 8 TB of data.
+                     4. implement virtual disk storage for virtual machines.
+  * **Append blobs** -> 1. Support append operations.
+                        2. Only add blocks to the end of an append blob; updating or deleting                                    existing blocks
+                        3. Each block can vary in size, up to 4 MB.
+                        4. The maximum size of an append blob is just over 195 GB.
+                        
+ *  Azure storage account -> create blobs -> _containers_.
+ *  A container provides a convenient way of grouping related blobs together, and you can organize blobs in a hierarchy of folders, similar to files in a file system on disk.
+ *  Control ->read /write blobs inside containers.
+ *  3 access tiers:
+      * **Hot tier** -> 1. default
+                         2. frequently accesses
+                         3. high-performance media.
+      * **Cool tier** ->1. lower performance
+                         2. accessed infrequently.
+                         3. create the blob in the Hot tier, but migrate it to the Cool tier later and vice-versa.
+     * **Archive tier** ->1. lowest storage cost, but with increased latency.
+                          2. can take hours for the data to become available.
+                          3. Rehydrated
+
+* A lifecycle management policy can automatically move a blob from Hot to Cool, and then to the Archive tier, can also arrange to delete outdated blobs.
+
+
+##### Use Case and Management
+* static website
+* Storing files for distributed access
+* Streaming video and audio
+* Storing data for backup and restore, disaster recovery, and archiving
+* Storing data for analysis by an on-premises or Azure-hosted service
 
