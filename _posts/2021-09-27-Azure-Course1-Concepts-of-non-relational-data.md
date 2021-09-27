@@ -162,4 +162,6 @@ title: Describe concepts of non-relational data
         The "staleness" can be configured in two ways:
           * The number of versions (K) of the item
           * The time interval (T) reads might lag behind the writes
-    * Session ->  consistent prefix, and eventual.
+    * Session -> a single client session reads are guaranteed to honor the consistent-prefix, monotonic reads, monotonic writes, read-your-writes, and write-follows-reads guarantees.
+    * consistent prefix -> 
+    *  and eventual.
