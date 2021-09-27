@@ -90,4 +90,4 @@ title: Describe concepts of relational data
 * PaaS solutions for relational databases, include Azure SQL Database, Azure Database for PostgreSQL, Azure Database for MySQL, and Azure Database for MariaDB.
 * Connect to them, create your databases, and upload your data. 
 
-
+![benefits and tradeoffs when running a database management system](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/4-choose-platform.png)
