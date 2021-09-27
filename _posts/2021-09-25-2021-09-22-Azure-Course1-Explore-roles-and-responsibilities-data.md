@@ -85,6 +85,36 @@ to make informed decisions
   * It is the cloud-based ETL and data integration service that allows you to create data-driven workflows for orchestrating data movement and transforming data at scale.
   *  Create and schedule data-driven workflows (called pipelines) that can ingest data from disparate data stores. 
   *  Build complex ETL processes that transform data visually with data flows or by using compute services such as Azure HDInsight Hadoop, Azure Databricks, and Azure SQL Database.
+  *  Publish your transformed data to data stores such as **Azure Synapse Analytics** for business intelligence (BI) applications to consume. 
+  *  Raw data can be organized into meaningful data stores and data lakes for better business decisions.
+  *  **How does it work?**
+    * Data Factory contains a series of interconnected systems that provide a complete end-to-end platform for data engineers.
+    * **Connect and collect** -> 1. The first step in building an information production system is to connect to all the required sources of data and processing, such as software-as-a-service (SaaS) services, databases, file shares, and FTP web services.
+                                 2. To move the data as needed to a centralized location for subsequent processing.
+                                 3. Use the **Copy Activity** in a data pipeline to move data from both on-premises and cloud source data stores to a centralization data store in the cloud for further analysis.
+                                 4. Collect data in **Azure Data Lake Storage** and transform the data later by using an Azure Data Lake Analytics compute service. 
+                                 5. Collect data in Azure Blob storage and transform it later by using an Azure HDInsight Hadoop cluster.
+    * **Transform and enrich** -> 1. Data is present in a centralized data store in the cloud, process or transform the collected data by using ADF mapping data flows. 
+                                  2. Data flows enable data engineers to build and maintain data transformation graphs that execute on Spark without needing to understand Spark clusters or Spark programming.
+                                  3. ADF supports external activities for executing your transformations on compute services such as HDInsight Hadoop, Spark, Data Lake Analytics, and Machine Learning.
+    * **CI/CD and publish** -> 1. Data pipelines using Azure DevOps and GitHub, allowing you to incrementally develop and deliver your ETL processes before publishing the finished product.
+                               2. After the raw data has been refined into a business-ready consumable form, load the data into Azure Data Warehouse, Azure SQL Database, Azure CosmosDB, or whichever analytics engine your business users can point to from their business intelligence tools.
+    * **Monitor** -> Azure Data Factory has built-in support for pipeline monitoring via Azure Monitor, API, PowerShell, Azure Monitor logs, and health panels on the Azure portal.
+* **Top-level concepts**
+  * **Pipelines** -> A pipeline is a logical grouping of activities that performs a unit of work. Together, the activities in a pipeline perform a task.
+  * **Data Flows** -> Create and manage graphs of data transformation logic that you can use to transform any-sized data. You can build-up a reusable library of data transformation routines and execute those processes in a scaled-out manner from your ADF pipelines. Data Factory will execute your logic on a Spark cluster that spins-up and spins-down when you need it. 
+  * **Activities** -> Activities represent a processing step in a pipeline. Data Factory supports three types of activities: data movement activities, data transformation activities, and control activities.
+  * **Datasets** -> Datasets represent data structures within the data stores, which simply point to or reference the data you want to use in your activities as inputs or outputs.
+  * **Linked services** -> Connection strings, which define the connection information that's needed for Data Factory to connect to external resources. 
+  * **Linked services are used for two purposes in Data Factory**:
+        * A **data store** that includes, a SQL Server database, Oracle database, file share, or Azure blob storage account. For a list of supported data stores, see the copy activity article.
+        * A **compute resource** that can host the execution of an activity. For example, the HDInsight, Hive activity runs on an HDInsight Hadoop cluster. 
+        * For a list of transformation activities and supported compute environments, see the transform data article.
+  
+  * **Integration Runtimes** -> An activity defines the action to be performed. A linked service defines a target data store or a compute service. An integration runtime provides the bridge between the activity and linked Services.
+  
+
+
 *  The non-relational field -> Azure Cosmos DB. 
 *  To manipulate and query the Cosmos DB data -> HiveQL, R, or Python.
 
