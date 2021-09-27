@@ -100,4 +100,66 @@ title: Describe concepts of non-relational data
     * Store, audit, and analyze changes to your objects, over any period of time, for security, compliance or intelligence for enterprise data management.
     * Build solutions to back up, mirror, or replicate object state in your account for disaster management or compliance.
     * Build connected application pipelines that react to change events or schedule executions based on created or changed objects.
+### Azure File Storage
+*  Azure File Storage enables you to create files shares in the cloud, and access these file shares from anywhere with an internet connection. 
+*  Azure File Storage exposes file shares using the **Server Message Block 3.0 (SMB)** protocol.
+*  Control access to shares in Azure File Storage using authentication and authorization services available through Azure Active Directory Domain Services.
+* Share up to 100 TB of data in a single storage account.
+* Data can be distributed across any number of file shares in the account.
+* Maximum size of a single file is 1 TB.
+* Supports up to 2000 concurrent connections per shared file.
+* Upload files to Azure File Storage using 1) the Azure portal 2) tools such as the AzCopy utility .
+* Azure File Sync service to synchronize locally cached copies of shared files with the data in Azure File Storage.
+* Two performance tiers:
+       1) **Standard** tier uses hard disk-based hardware in a datacenter, and the Premium tier uses solid-state disks.
+       2) **Premium** tier offers greater throughput, but is charged at a higher rate.
 
+#### Use cases and management benefits of using Azure File Storage
+* Migrate existing applications to the cloud.
+* Share server data across on-premises and cloud.
+* Integrate modern applications with Azure File Storage.
+* Simplify hosting High Availability (HA) workload data.
+
+### Important Points
+* Don't use Azure File Storage for files that can be written by multiple concurrent processes simultaneously. Multiple writers require careful synchronization, otherwise the changes made by one process can be overwritten by another. 
+* The alternative solution is to lock the file as it is written, and then release the lock when the write operation is complete. However, this approach can severely impact concurrency and limit performance.
+
+* A fully managed service.
+* Shared data is replicated locally within a region, but can also be geo-replicated to a second region.
+* 300 MB/second of throughput for a single Standard file share, but you can increase throughput capacity by creating a Premium file share, for additional cost.
+* All data is encrypted at rest.
+* Can enable encryption for data in-transit between Azure File Storage and your applications.
+### Azure Cosmos DB
+* NOSQL -> documents, graphs, key-value stores, and column family stores.
+* Azure Cosmos DB is a multi-model NoSQL database management system. Cosmos DB manages data as a partitioned set of documents. A document is a collection of fields, identified by a key. The fields in each document can vary, and a field can contain child documents.
+* Many document databases use JSON (JavaScript Object Notation) to represent the document structure.
+* A document can hold up to 2 MB of data, including small binary objects. 
+* If you need to store larger blobs as part of a document, use Azure Blob storage, and add a reference to the blob in the document.
+* Cosmos DB provides APIs(Application Programming Interface) to access these documents using a set of well-known interfaces.
+  1. SQL API. ->realtional DB
+  2. Table API.  -> key-value pair
+  3. MongoDB API. -> document database
+  4. Cassandra API. -> column family database management system. 
+  5. Gremlin API. -> graph database
+
+* CosmosDB database -> The documents in a container are grouped together into partitions. 
+* A set of documents that share a common partition key.
+* Helps to reduce the amount of I/O (disk reads) that queries might need to perform when retrieving a set of documents for a given entity.
+
+### Use cases and management benefits
+* Highly scalable DBMS
+* Automatically allocates space in a container for your partitions, and each partition can grow up to 10 GB in size.
+* Indexes are created and maintained automatically. 
+* Virtually no administrative overhead
+* To ensure availability, all databases are replicated within a single region.
+* Replication is transparent, and failover from a failed replica is automatic.
+* Guarantees 99.99% high availability.
+* Replicate anywhere in the world (additional cost).
+* All replicas are synchronized.
+* Types of Consistency:
+    * Strong -> Linearizability refers to serving requests concurrently.
+    * Bounded staleness-> The reads are guaranteed to honor the consistent-prefix guarantee.
+        The "staleness" can be configured in two ways:
+          * The number of versions (K) of the item
+          * The time interval (T) reads might lag behind the writes
+    * Session ->  consistent prefix, and eventual.
