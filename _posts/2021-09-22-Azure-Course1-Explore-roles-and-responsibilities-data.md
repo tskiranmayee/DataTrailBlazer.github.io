@@ -140,6 +140,6 @@ and enabling advanced analytics** capabilities through reports and visualization
 * Your data might be held somewhere local such as an Excel spreadsheet, or in a collection of cloud-based and on-premises databases, or some other set of data sources. 
 * Power BI -> lets you easily connect to your data sources, discover what's important in that data, and share your findings with others in the organization.
 
-
+[Relational Databases]({{ site.baseurl }}{% post_url ../_posts/2021-09-27-Azure-Course1-Concepts-of-relational-data %})
 
 
