@@ -25,4 +25,4 @@ title: Data Visualization
 * Filled map
 
 ### Data analytics
-![data analytics](![Data Process Stages](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/4-analytics-table.png)
+![data analytics](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/4-analytics-table.png)
