@@ -85,7 +85,29 @@ title:Azure Relational Data Services
 * The Single Database and Elastic Pool options restrict some of the administrative features available to SQL Server.
 * Managed instance effectively runs a fully controllable instance of SQL Server in the cloud.
 * Automates backups, software patching, database monitoring, and other general tasks, but you have full control over security and resource allocation for your databases.
-*  
+* All communications are encrypted and signed using certificates. To check the trustworthiness of communicating parties, managed instances constantly verify these certificates through certificate revocation lists. 
+* If the certificates are revoked, the managed instance closes the connections to protect the data.
 
+![DIFFERENCE](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/5-azure-sql-database-graphic.png)
 
+#### PostgreSQL, MariaDB, and MySQL
+![DifferentDatabases](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/6-mysql-mariadb-postgresql.png)
+
+<table align="center">
+  <tr><th align="center">MySQL</th><th align="center">MariaDB</th><th align="center">PostgreSQL</th></tr>
+  <tr>High availability<td></td><td>High availability</td><td>similar benefits as Azure Database for MySQL</td></tr>
+  <tr><td>Predictable performance.</td><td>Predictable performance</td><td>three pricing tiers: Basic, General Purpose, and Memory Optimized</td></tr>
+  <tr><td>Easy scaling</td><td>Easy scaling</td><td>Hyperscale (Citus) is a deployment option that scales queries across multiple server nodes to support large database loads. Your database is split across nodes. Data is split into chunks based on the value of a partition key or sharding key.</td></tr>
+   <tr><td>Secure data, both at rest and in motion.</td><td>Secure data, both at rest and in motion.</td><td>highly available service</td></tr>
+   <tr>Automatic backups and point-in-time restore for the last 35 days.<td></td><td>Automatic backups and point-in-time restore for the last 35 days.</td><td>pgAdmin tool</td></tr>
+    <tr>Enterprise-level security and compliance with legislation<td></td><td>Enterprise-level security and compliance with legislation</td>
+              <td>queries run against databases on the server, and saves them in a database named azure_sys.</td></tr>
+     <tr>pay-as-you-go pricing <td></td><td>  ----- </td><td>monitor the queries that users are running</td></tr>
+</table>
+#### Migrate data to Azure
+* Azure Database Migration Service (DMS) -> MySQL, MariaDB, or PostgreSQL databases running on premises on Cloud.
+* Restore a backup of your on-premises databases directly to databases running in Azure Data Services. 
+* Configure replication from an on-premises database, so that any changes made to data in that database are copied to the database running in Azure Data Services.
+* Reconfigure users and applications to connect to the database in the cloud.
+* don't have to shut down the on-premises system while you transfer users to the cloud
   
