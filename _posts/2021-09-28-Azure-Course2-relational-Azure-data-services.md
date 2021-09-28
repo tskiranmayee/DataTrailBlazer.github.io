@@ -67,7 +67,7 @@ title:Azure Relational Data Services
 * create the pool, and only your databases can use the pool
 * databases with resource requirements that vary over time, and can help you to reduce costs.
 * Elastic Pool enables you to use the resources available in the pool, and then release the resources once processing has completed.
-* ![Elastic Pool](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/4-elastice-pool.png)
+* ![Elastic Pool](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/4-elastic-pool.png)
 ##### Advantages:
 * Azure SQL Database is often used for:
 
