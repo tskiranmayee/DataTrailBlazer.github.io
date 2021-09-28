@@ -104,6 +104,7 @@ title:Azure Relational Data Services
               <td>queries run against databases on the server, and saves them in a database named azure_sys.</td></tr>
      <tr>pay-as-you-go pricing <td></td><td>  ----- </td><td>monitor the queries that users are running</td></tr>
 </table>
+
 #### Migrate data to Azure
 * Azure Database Migration Service (DMS) -> MySQL, MariaDB, or PostgreSQL databases running on premises on Cloud.
 * Restore a backup of your on-premises databases directly to databases running in Azure Data Services. 
