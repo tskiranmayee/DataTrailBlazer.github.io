@@ -37,7 +37,7 @@ title:Azure Relational Data Services
 * Available for at least 99.99% of the time.
 * Cost -> 1. Base price of each service covers underlying infrastructure and licensing, together with the administration charges. 
           2. Additionally, these services are designed to be always on. This means that you can't shut down a database and restart it later.
-  ![SqlServers](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/2-choose-platform.png)
+  ![SqlServers](https://github.com/TrailBlazed/trailblazed.github.io/blob/gh-pages/assets/4-choose-platform.png)
  #### SQL Server on Azure Virtual Machines
  * IaaS
  * Use full versions of SQL Server in the Cloud without having to manage any on-premises hardware.
