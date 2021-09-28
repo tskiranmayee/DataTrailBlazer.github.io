@@ -1,6 +1,6 @@
 ---
-layout:post
-title:Describe provisioning relational data services
+layout:  post
+title: Describe provisioning relational data services
 ---
 
 ### What is provisioning?
