@@ -14,6 +14,7 @@ title:Azure Relational Data Services
 
 ### Relational Azure Data Services
 * Migrate your on-premises systems to a collection of Azure virtual machines.
+
 #### IaaS(Infrastructure-as-a-Service)
 * Create a virtual infrastructure in the cloud that mirrors the way an on-premises data center might work.
 * Create a set of virtual machines, connect them together using a virtual network, and add a range of virtual devices. You take responsibility for installing and configuring the software, such as the DBMS, on these virtual machines.
@@ -38,6 +39,7 @@ title:Azure Relational Data Services
 * Cost -> 1. Base price of each service covers underlying infrastructure and licensing, together with the administration charges. 
           2. Additionally, these services are designed to be always on. This means that you can't shut down a database and restart it later.
   ![SqlServers](https://github.com/TrailBlazed/trailblazed.github.io/blob/gh-pages/assets/4-choose-platform.png)
+  
  #### SQL Server on Azure Virtual Machines
  * IaaS
  * Use full versions of SQL Server in the Cloud without having to manage any on-premises hardware.
@@ -49,11 +51,13 @@ title:Azure Relational Data Services
  * SQL virtual machines are **lift-and-shift ready** for existing applications that require fast migration to the cloud with minimal changes.
  * **lift-and-shift** refers to the way in which you can move a database directly from an on-premises server to an Azure virtual machine without requiring that you make any changes to it. Applications that previously connected to the on-premises database can be quickly reconfigured to connect to the database running on the virtual machine, but should otherwise remain unchanged.
  * A **hybrid deployment** is a system where part of the operation runs on-premises, and part in the cloud. Your database might be part of a larger system that runs on-premises, although the database elements might be hosted in the cloud.
+ * 
  #### Azure SQL Database
  * PaaS
  * **SQL Server on a virtual machine** ->Management overhead(Disadvantage)
  * A **SQL Database server** is a logical construct that acts as a central administrative point for multiple single or pooled databases, logins, firewall rules, auditing rules, threat detection policies, and failover groups.
  * Azure SQL Database options -> **Single Database, Elastic Pool, and Managed Instance**
+ 
  ##### Single Database : set up and run a single SQL Server database
  * You create and run a database server in the cloud
  * You access your database through this server. 
@@ -61,6 +65,7 @@ title:Azure Relational Data Services
  * By default, resources are pre-allocated, and you're charged per hour for the resources you've requested. 
  * A **serverless** configuration -> Microsoft creates its own server, which might be shared by a number of databases belonging to other Azure subscribers. Microsoft ensures the privacy of your database. Your database automatically scales and resources are allocated or deallocated as required. 
 ![Single Databases](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/4-single-database.png)
+
 ##### Elastic Pool
 * Similar to Single Database, except that by default multiple databases can share the same resources, such as memory, data storage space, and processing power through multiple-tenancy.
 * resources ->pool
@@ -68,6 +73,7 @@ title:Azure Relational Data Services
 * databases with resource requirements that vary over time, and can help you to reduce costs.
 * Elastic Pool enables you to use the resources available in the pool, and then release the resources once processing has completed.
 * ![Elastic Pool](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/4-elastic-pool.png)
+
 ##### Advantages:
 * Azure SQL Database is often used for:
 
@@ -106,7 +112,7 @@ title:Azure Relational Data Services
 </table>
 
 #### Migrate data to Azure
-* Azure Database Migration Service (DMS) -> MySQL, MariaDB, or PostgreSQL databases running on premises on Cloud.
+* **Azure Database Migration Service (DMS)** -> MySQL, MariaDB, or PostgreSQL databases running on premises on Cloud.
 * Restore a backup of your on-premises databases directly to databases running in Azure Data Services. 
 * Configure replication from an on-premises database, so that any changes made to data in that database are copied to the database running in Azure Data Services.
 * Reconfigure users and applications to connect to the database in the cloud.
