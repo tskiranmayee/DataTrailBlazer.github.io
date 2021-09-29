@@ -1,0 +1,68 @@
+---
+layout : post
+title: Common Practices For Data Loading
+---
+
+* In a big data system, data ingestion has to be fast enough to capture the large quantities of data that may be heading your way, 
+and have enough compute power to process this data in a timely manner.
+*  More popular tools used with Azure:
+  * Azure Data Factory
+  * PolyBase
+  * SQL Server Integration Services
+  * Azure Databricks.
+
+### 1.Azure Data Factory
+* **Azure Data Factory** is a data ingestion and transformation service that allows you to load raw data from many different sources, both on-premises and in the cloud. 
+* Clean, transform, and restructure the data, before loading it into a repository such as a data warehouse.
+* Contains a series of interconnected systems that provide a complete end-to-end platform for data engineers.
+* Can load static data, but you can also ingest streaming data.
+* Data Factory provides an **orchestration** engine.
+* **Orchestration** is the process of directing and controlling other services, and connecting them together, to allow data to flow between them. 
+* Azure Data Factory uses a number of different resources: **linked services, datasets, and pipelines**.
+
+#### Linked Services
+* Data Factory moves data from a data source to a destination. 
+* A linked service provides the information needed for Data Factory to connect to a source or destination. 
+
+#### Datasets
+* A dataset in Azure Data Factory represents the data that you want to ingest (input) or store (output).
+* A dataset connects to an input or an output using a linked service.
+
+#### Pipelines
+* A pipeline is a logical grouping of activities that together perform a task. 
+* The activities in a pipeline define actions to perform on your data.
+* Use a **copy activity** to transform data from a source dataset to a destination dataset. 
+* **Azure Function** activity to run an Azure Function to modify and filter data.
+* **Azure Databricks Notebook** activity to run a notebook that performs more advanced processing.
+* **Pipelines** don't have to be linear. 
+* logic activities that repeatedly perform a series of tasks while some condition is true using a **ForEach activity**.
+* Follow different processing paths depending on the outcome of previous processing using an **If Condition activity**.
+* You can run a pipeline manually, or you can arrange for it to be run later using a trigger.
+* A **trigger** enables you to schedule a pipeline to occur according to a planned schedule.
+
+### 2. PolyBase
+* PolyBase is a feature of SQL Server and Azure Synapse Analytics that enables you to run Transact-SQL queries that read data from external data sources. 
+* PolyBase, you can read data managed by Hadoop, Spark, and Azure Blob Storage, as well as other database management systems such as Cosmos DB, Oracle, Teradata, and MongoDB.
+* Spark is a parallel-processing engine that supports large-scale analytics.
+* Run queries that join tables in a SQL database with external data, enabling you to perform analytics that span multiple data stores.
+* Azure SQL Database does not support PolyBase.
+
+### 3. SQL Server Integration Services
+* Building enterprise-level data integration and data transformations solutions. 
+* SSIS is part of Microsoft SQL Server.
+* SSIS can extract and transform data ->  XML data files, flat files, and relational data sources, and then load the data into one or more destinations
+* A rich set of built-in tasks and transformations, graphical tools for building packages, and the Integration Services Catalog database, where you store, run, and manage packages.
+* SSIS is an on-premises utility. 
+* Azure Data factory allows you to run your existing SSIS packages as part of a pipeline in the cloud ->started quickly without rewrite your existing transformation logic.
+
+### 4. Azure Databricks
+* Databricks is based on Spark, and is integrated with Azure to streamline workflows.
+* Databricks can process data held in many different types of storage, including Azure Blob storage, Azure Data Lake Store, Hadoop storage, flat files, SQL databases, and data warehouses, and Azure services such as Cosmos DB.
+* write and run Spark code using notebooks.
+* A notebook is like a program that contains a series of steps (called cells). A notebook can contain cells that read data from one or more data sources, process the data, and write the results out to a data store. 
+* The scalability of Azure Databricks makes it an ideal platform for performing complex data ingestion and analytics tasks.
+* Azure Data Factory can incorporate Azure Databricks notebooks into a pipeline.
+
+### 5. Azure Synapse Analytics
+* [Vedio Description](https://docs.microsoft.com/en-us/learn/modules/explore-data-ingestion-azure/3-load-data)
+* 
