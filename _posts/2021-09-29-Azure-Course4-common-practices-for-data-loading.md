@@ -19,6 +19,7 @@ and have enough compute power to process this data in a timely manner.
 * Data Factory provides an **orchestration** engine.
 * **Orchestration** is the process of directing and controlling other services, and connecting them together, to allow data to flow between them. 
 * Azure Data Factory uses a number of different resources: **linked services, datasets, and pipelines**.
+*  Used to ingest data into Azure Synapse Analytics
 
 #### Linked Services
 * Data Factory moves data from a data source to a destination. 
