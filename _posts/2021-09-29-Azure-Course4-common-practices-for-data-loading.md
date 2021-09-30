@@ -105,10 +105,63 @@ and have enough compute power to process this data in a timely manner.
 * HDInsight uses a clustered model, similar to that of Synapse Analytics.
 * Hadoop Map/Reduce uses a simple framework to split a task over a large dataset into a series of smaller tasks over subsets of the data that can be run in parallel, and the results then combined.
 * **Apache Hive** provides interactive SQL-like facilities for querying, aggregating, and summarizing data.
-* **Apache Kafka** is a clustered streaming service that can ingest data in real time. 
-* **Apache Storm** is a scalable, fault tolerant platform for running real-time data processing applications. Streaming data.
+* **Apache Kafka** is a clustered streaming service that can ingest data in real time (Streaming Data). 
+* **Apache Storm** is a scalable, fault tolerant platform for running real-time data processing applications. (Streaming data)
 ![HDInSight](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/2-hdinsight.png)
 
-* 
+### Azure Data Factory
 
- 
+* Data Factory provides a scalable and programmable ingestion engine that you can use to implement complex hybrid extract-transform-load (ETL), extract-load-transform (ELT), and data integration projects.
+* Using Azure Data Factory, you can create and schedule data-driven workflows (called pipelines) that can ingest data from the disparate data stores used by the gaming company.
+* Build complex ETL processes that transform data visually with data flows or by using compute services such as Azure HDInsight, Azure Databricks, and Azure SQL Database.
+* A pipeline is a logical grouping of activities that performs a unit of work.
+* Together, the activities in a pipeline perform a task.
+![Data Factory](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/2-data-factory-pipeline.png)
+
+ ### Azure Data Lake
+ * A file system that can store near limitless quantities of data.
+ * It uses a hierarchical organization
+ * Compatible with the Hadoop Distributed File System (HDFS). You can run Hadoop jobs using Azure HDInsight (see below) that can read and write data in Data Lake Store.
+ * Azure Data Lake Store provides granular security over data, using **Access Control Lists**.
+ * **Access Control List** specifies which accounts can access which files and folders in the store. * Linux -> **POSIX-style** permissions to grant read, write, and search access based on file ownership and group membership of users.
+ * Azure Data Factory, Azure Databricks, Azure HDInsight, Azure Data Lake Analytics, and Azure Stream Analytics can read and write Data Lake Store directly.
+
+### Data Lake Analytics
+* An on-demand analytics job service that you can use to process big data. 
+* Define a job using a language called **U-SQL**.
+* This is a hybrid language that takes features from both SQL and C#, and provides declarative and procedural capabilities that you can use to process data.
+* Understand that the U-SQL code only provides a description of the work to be performed.
+* Azure Data Lake Analytics determines how best to actually carry out this work. 
+* Data Lake Analytics then breaks down this internal representation into **stages of execution**.
+* **Each stage performs a task**, such as extracting the data from a specified source, dividing the data into partitions, processing the data in each partition, aggregating the results in a partition, and then combining the results from across all partitions. 
+* **Partitioning is used to improve parallelization**, and the processing for different partitions is performed concurrently on different processing nodes. The data for each partition is determined by the U-SQL compiler, according to the way in which the job retrieves and processes the data.
+* A U-SQL job can output results to a single CSV file, partition the results across multiple files, or can write to other destinations.
+* For example, Data Lake Analytics enables you to create custom outputters if you want to save data in a particular format (such as XML or HTML). 
+* You can also write data to the Data Lake Catalog. 
+* The catalog provides a SQL-like interface to Data Lake Storage, enabling you to create tables, and views, and run INSERT, UPDATE, and DELETE statements against these tables and views.
+
+### Azure Synapse Analytics
+
+* Provides a suite of tools to analyze and process an organization's data.
+* It incorporates SQL technologies, Transact-SQL query capabilities, and open-source Spark tools to enable you to quickly process very large amounts of data.
+* Synapse SQL pool: This is a collection of servers running Transact-SQL. Transact-SQL is the dialect of SQL used by Azure SQL Database, and Microsoft SQL Server. You write your data processing logic using Transact-SQL.
+* Azure Synapse is composed of the following elements:
+  * **Synapse Spark pool**: This is a cluster of servers running Apache Spark to process data. You write your data processing logic using one of the four supported languages: Python, Scala, SQL, and C# (via .NET for Apache Spark). Spark pools support Azure Machine Learning through integration with the SparkML and AzureML packages.
+  * **Synapse Pipelines**: A Synapse pipeline is a logical grouping of activities that together perform a task. The activities in a pipeline define actions to perform on your data. For example, you might use a copy activity to transform data from a source dataset to a destination dataset. You could include activities that transform the data as it is transferred, or you might combine data from multiple sources together.
+  * **Synapse Link**: This component allows you to connect to Cosmos DB. You can use it to perform near real-time analytics over the operational data stored in a Cosmos DB database.
+  * **Synapse Studio**: This is a web user interface that enables data engineers to access all the Synapse Analytics tools. You can use Synapse Studio to create SQL and Spark pools, define and run pipelines, and configure links to external data sources.
+
+* Any data stored in Azure Synapse Analytics can be used to build and train models with Azure Machine Learning.
+
+#### SQL Pools
+* Synapse SQL, your analytics workload runs using a SQL pool.
+*  In a SQL pool, the **Control and Compute nodes** in the cluster run a version of Azure SQL Database that supports distributed queries.
+*  Transact-SQL statements
+*  T-SQL -> Control Node (Split the work) -> COmpute nodes
+*  The data is split into chunks called distributions. 
+*  A **distribution** is the basic unit of storage and processing for parallel queries that run on distributed data. 
+*  Each of the smaller queries runs on one of the data distributions.
+*  The control and compute nodes use the **Data Movement Service (DMS)** to move data across the nodes as necessary to run queries in parallel and return accurate results.
+*  Synapse Analytics uses a technology called **PolyBase** to make external data look like SQL tables.
+*  Synapse uses **Azure Storage** to manage your data while it's being processed.
+*  By default, an on-demand SQL pool is created in each Azure Synapse Analytics workspace. You can then provision additional pools, either on-demand or provisioned.
