@@ -119,3 +119,4 @@ title: Azure Relational Data Services
 * Reconfigure users and applications to connect to the database in the cloud.
 * don't have to shut down the on-premises system while you transfer users to the cloud
   
+[<- Back to Main Menu]({{ site.baseurl }}{% post_url ../_posts/2021-07-20-Azure-DP900-Unit-1 %})
