@@ -133,13 +133,16 @@ Data is a collection of facts such as numbers, descriptions, and observations us
  * Example : financial institution(stock markert) , online gaming, real-estate website
 
 ### Understand differences between batch and streaming data
-| Differences | Batch | Streaming|
-| ----------- | ------| ----------|
-| Data Scope | process all the data in the dataset |most recent data received, or within a rolling time window (the last 30 seconds, for example)
-| Data Size | handling large datasets efficiently | individual records or micro batches consisting of few records|
-| Performance | few hours latency | order of seconds or milliseconds |
-| Analysis | performing complex analytics | simple response functions, aggregates, or calculations such as rolling averages |
+
  
+ table align="center">
+  <tr><th align="center">Differences</th><th align="center">Batch</th><th align="center">Streaming</th></tr>
+  <tr><td>Data Scope</td><td>process all the data in the dataset</td><td>most recent data received, or within a rolling time window (the last 30 seconds, for example)</td></tr>
+   <tr><td>Data Size</td><td> handling large datasets efficiently</td><td>individual records or micro batches consisting of few records</td></tr>
+   <tr><td>Performance</td><td>few hours latency</td><td>order of seconds or milliseconds</td></tr>
+   <tr><td>Analysis</td><td>performing complex analytics</td><td> simple response functions, aggregates, or calculations such as rolling averages</td></tr>
+ 
+  </table>
 ### 
  
 
