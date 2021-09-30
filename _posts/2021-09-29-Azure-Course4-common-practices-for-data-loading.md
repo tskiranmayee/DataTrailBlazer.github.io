@@ -213,4 +213,4 @@ and have enough compute power to process this data in a timely manner.
 * a web interface that enables you to create pools and pipelines interactively. 
 * Spark notebooks and Transact-SQL jobs
 * Monitor the performance of operations that are currently running, and you can manage the serverless or provisioned resources.
-* 
+
