@@ -17,3 +17,6 @@ title: Manage non-relational data stores in Azure
 
 ### Manage Azure File storage
 [File Storage](https://docs.microsoft.com/en-us/learn/modules/explore-non-relational-data-stores-azure/5-manage-azure-file-storage?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.wwl.azure-data-fundamentals-explore-non-relational-data)
+
+
+[<- Back to Main Menu]({{ site.baseurl }}{% post_url ../_posts/2021-07-20-Azure-DP900-Unit-1 %})
