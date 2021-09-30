@@ -22,11 +22,11 @@ title: Query relational data in Azure
    
   <table align="center">
   <tr><th align="center">Statement</th><th align="center">Description</th><th align="center">Applied</th></tr>
-  <tr>SELECT<td></td><td>Select/Read rows from a table</td><td>By Default, Every Row at a time</td></tr>
-   <tr>INSERT<td></td><td>Insert new rows into a table</td><td>One Row at a time</td></tr>
-   <tr>UPDATE<td></td><td>Edit/Update existing rows</td><td>By Default, Every Row at a time</td></tr>
-   <tr>DELETE<td></td><td>Delete existing rows in a table</td><td>By Default, Every Row at a time</td></tr>
- <tr>DROP<td></td><td>all the rows in that table are lost.</td><td>By Default, Every Row at a time</td></tr>
+  <tr><td>SELECT</td><td>Select/Read rows from a table</td><td>By Default, Every Row at a time</td></tr>
+   <tr><td>INSERT</td><td>Insert new rows into a table</td><td>One Row at a time</td></tr>
+   <tr><td>UPDATE</td><td>Edit/Update existing rows</td><td>By Default, Every Row at a time</td></tr>
+   <tr><td>DELETE</td><td>Delete existing rows in a table</td><td>By Default, Every Row at a time</td></tr>
+ <tr><td>DROP</td><td>all the rows in that table are lost.</td><td>By Default, Every Row at a time</td></tr>
   </table>
   
   #### Data Types :
