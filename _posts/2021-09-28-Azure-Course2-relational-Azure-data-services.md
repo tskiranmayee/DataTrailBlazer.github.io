@@ -1,7 +1,8 @@
 ---
 layout: post
-title:Azure Relational Data Services
+title: Azure Relational Data Services
 ---
+
 ### Introduction
 * Database -> Collection of Data
 * Shredsheet -> PB of data -> store data in a tabular format, with rows and columns.
