@@ -69,5 +69,5 @@ or New-AzResourceGroupDeployment command in Azure PowerShell.
     Gateway (IP listening to port 1433) -> either redirects traffic to the database cluster, or acts as a proxy for the database cluster ->Inside the database cluster, traffic is forwarded to the appropriate Azure SQL database.
     
 
-
+[<- Back to Main Menu]({{ site.baseurl }}{% post_url ../_posts/2021-07-20-Azure-DP900-Unit-1 %})
 * 
