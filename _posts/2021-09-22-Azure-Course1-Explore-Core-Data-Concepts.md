@@ -143,7 +143,7 @@ Data is a collection of facts such as numbers, descriptions, and observations us
    <tr><td>Analysis</td><td>performing complex analytics</td><td> simple response functions, aggregates, or calculations such as rolling averages</td></tr>
  
   </table>
-### 
+
 
 [Roles and Responsibitities]({{ site.baseurl }}{% post_url ../_posts/2021-09-22-Azure-Course1-Explore-roles-and-responsibilities-data %})
 
