@@ -1,6 +1,6 @@
 ---
 layout : post
-title:  Data Ingestion in Azure
+title:  Data Ingestion, Storage and Processing in Azure
 ---
 
 ## Common Practices For Data Loading
