@@ -157,11 +157,60 @@ and have enough compute power to process this data in a timely manner.
 * Synapse SQL, your analytics workload runs using a SQL pool.
 *  In a SQL pool, the **Control and Compute nodes** in the cluster run a version of Azure SQL Database that supports distributed queries.
 *  Transact-SQL statements
-*  T-SQL -> Control Node (Split the work) -> COmpute nodes
+*  T-SQL -> Control Node (Split the work) -> Compute nodes
 *  The data is split into chunks called distributions. 
 *  A **distribution** is the basic unit of storage and processing for parallel queries that run on distributed data. 
 *  Each of the smaller queries runs on one of the data distributions.
 *  The control and compute nodes use the **Data Movement Service (DMS)** to move data across the nodes as necessary to run queries in parallel and return accurate results.
 *  Synapse Analytics uses a technology called **PolyBase** to make external data look like SQL tables.
 *  Synapse uses **Azure Storage** to manage your data while it's being processed.
-*  By default, an on-demand SQL pool is created in each Azure Synapse Analytics workspace. You can then provision additional pools, either on-demand or provisioned.
+*  By default, an on-demand SQL pool is created in each Azure Synapse Analytics workspace. You can then provision additional pools, either **on-demand or provisioned**.
+*  On-demand pools only allow you to query data held in **external files**. If you want to ingest and load the data into Synapse Analytics, you must create your own SQL pool.
+*  Designed to run queries over massive datasets.
+*  You can manually scale the SQL pool up to 60 nodes. 
+*  **Pause** a SQL pool if you don't require it for a while. Pausing releases the resources associated with the pool. You aren't charged for these resources until you manually **resume** the pool. However, you can't run any queries until the pool is resumed. Resuming a pool can take several minutes.
+*  Use SQL pools in Synapse Analytics for the following scenarios:
+
+  * **Complex reporting** - You can use the full power of Transact-SQL to run complex SQL statements that summarize and aggregate data.
+
+  * **Data ingestion** - PolyBase enables you to retrieve data from many external sources and convert it into a tabular format. You can reformat this data and save it as tables and materialized views in Azure Synapse.
+  
+ * Large amount of data held in files in Azure Data Lake storage. You want to retrieve the data in these files and use it to populate tables held in Azure Synapse Analytics -> Synapse SQL Pools 
+ ### Spark pools
+ * Spark clusters
+ * Notebooks
+ * Spark pools and SQL pools can coexist in the same Azure Synapse Analytics instance.
+ * Notebooks also allow you to visualize data through graphs, and transform data as it's loaded.
+ *  The data can then be used by Spark Machine Learning (SparkML) and Azure Machine Learning (AzureML)
+ * Formats -> csv, json, xml, parquet, orc, and avro and many more.
+ *  In-memory cluster computing.
+ *  A Spark job can load and cache data into memory and query it repeatedly. In-memory computing is much faster than disk-based applications.
+ *  Spark pools can have autoscaling enabled,
+ *  Suitable for scenarios:
+    * Data Engineering/Data Preparation
+    * Machine Learning -> MLlib
+
+### Synapse Pipelines
+* A pipeline is a logical grouping of activities that together perform a task.
+* A pipeline could contain a set of activities that ingest and clean log data, and then kick off a mapping data flow to analyze the log data.
+* The pipeline allows you to manage the activities as a set instead of each one individually.
+* Synapse pipelines use the same Data Integration engine used by Azure Data Factory. 
+
+### Synapse Link
+* Azure Synapse Link for Azure Cosmos DB is a cloud-native hybrid transactional and analytical processing (HTAP) capability that enables you to run near real-time analytics over operational data stored in Azure Cosmos DB.
+* Synapse link uses a feature of Cosmos DB named Cosmos DB Analytical Store. Cosmos DB Analytical Store contains a copy of the data in a Cosmos DB container, but organized as a **column store**.
+* Column stores are a more optimal format for running analytical workloads that need to aggregate data down a column rather than across a row, such as generating sum totals, averages, maximum or minimum values for a column. 
+* Cosmos DB automatically keeps the data in its containers synchronized with the copies in the column store.
+* Synapse Link enables you to run workloads that retrieve data directly from Cosmos DB and run analytics workloads using Azure Synapse Analytics. The data doesn't have to go through an ETL (extract, transform, and load) process because the data isn't copied into Synapse Analytics; it remains in the Cosmos DB analytical store.
+* Uses :
+  * Supply chain analytics and forecasting. 
+  * Operational reporting.
+  * Batch data integration and orchestration
+  * Real-time personalization.
+  * IoT maintenance.
+
+### Synapse Studio
+* a web interface that enables you to create pools and pipelines interactively. 
+* Spark notebooks and Transact-SQL jobs
+* Monitor the performance of operations that are currently running, and you can manage the serverless or provisioned resources.
+* 
