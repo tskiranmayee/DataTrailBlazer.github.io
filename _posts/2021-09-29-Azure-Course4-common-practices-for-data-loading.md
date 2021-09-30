@@ -1,6 +1,6 @@
 ---
 layout : post
-title:  Explore modern data warehouse analytics in Azure
+title:  Data Ingestion in Azure
 ---
 
 ## Common Practices For Data Loading
