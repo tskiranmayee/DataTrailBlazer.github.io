@@ -3,7 +3,7 @@ layout : post
 title: Modern Data Warehousing
 ---
 
-### MOdern Data Warehouse
+### Modern Data Warehouse
 * Used as the source for analysis, reporting, and online analytical processing (OLAP).
 * Data warehouses have to handle "Big Data".
 * Big data is the term used for large quantities of data collected in escalating volumes, at higher velocities, and in a greater variety of formats.
