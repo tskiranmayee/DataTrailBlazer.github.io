@@ -51,3 +51,4 @@ Tools to query data held in Azure SQL Database:
 ### Retrieve connection information for Azure Database for MySql
 * Use MySql Benchmark.
    
+[<- Back to Main Menu]({{ site.baseurl }}{% post_url ../_posts/2021-07-20-Azure-DP900-Unit-1 %})
