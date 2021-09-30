@@ -188,3 +188,5 @@ title: Describe concepts of non-relational data
 * Scripting and tooling
 * Resiliency
 * Familiar programmability
+
+[<- Back to Main Menu]({{ site.baseurl }}{% post_url ../_posts/2021-07-20-Azure-DP900-Unit-1 %})
