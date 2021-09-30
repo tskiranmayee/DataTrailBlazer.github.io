@@ -52,3 +52,6 @@ title: Building with Power BI
 ### Create out-of-box dashboards with cloud services
 Click **Get Data** -> **Canvas** ->  connect to **software services** like Salesforce, Facebook, Google Analytics etc -> **Power BI service** provides a collection of ready-made visuals that are pre-arranged on dashboards and reports for your organization called **app**
 ->Connect to Github -> Dashboard, Report, Dataset(collection of Data) -> Pull Request ->Update the dataset ->Scheduled Refresh ( in Settings)
+
+
+[<- Back to Main Menu]({{ site.baseurl }}{% post_url ../_posts/2021-07-20-Azure-DP900-Unit-1 %})
