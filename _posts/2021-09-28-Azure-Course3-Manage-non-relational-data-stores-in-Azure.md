@@ -10,7 +10,7 @@ title: Manage non-relational data stores in Azure
 * JSON
 * Key-Value pair
 * Cosmos DB database are organized into containers.
-* [Query COSMOS DB] (https://docs.microsoft.com/en-us/learn/modules/explore-non-relational-data-stores-azure/3-query-azure-cosmos-db)
+* [Query COSMOS DB](https://docs.microsoft.com/en-us/learn/modules/explore-non-relational-data-stores-azure/3-query-azure-cosmos-db)
 
 ### Manage Azure Blob Storage
 [Blob Storage](https://docs.microsoft.com/en-us/learn/modules/explore-non-relational-data-stores-azure/4-manage-azure-blob-storage?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.wwl.azure-data-fundamentals-explore-non-relational-data)
