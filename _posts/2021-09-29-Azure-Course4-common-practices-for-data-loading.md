@@ -71,16 +71,44 @@ and have enough compute power to process this data in a timely manner.
 
 ## Data storage and processing in Azure
 
+### Azure Synapse Analytics
+
 *  Azure Synapse Analytics is to extract the data from where it's currently stored, **load** this data into an **analytical data store**, and then **transform** the data, shaping it for analysis. This approach is known as ELT, for extract, load, and transform.
 * Using **Apache Spark, and automated pipelines** -> it run parallel processing tasks across massive datasets, and perform _big data_ analytics.
 * _Big data_ refers to data that is too large or complex for traditional database systems. Systems that process big data have to perform rapid data ingestion and processing; they must have capacity to store the results, and sufficient compute power to perform analytics over these results.
 * Analyze operational data in its original location -> **hybrid transactional analytical processing (HTAP)** ->Perform analysis over data held in repositories such as Azure Cosmos DB using Azure Synapse Link.
 * **Processing data in Azure:**
- * Azure Databricks
- * Azure Data Factory
- * Azure Synapse Analytics
- * Azure Data Lake. 
+  * Azure Databricks
+  * Azure Data Factory
+  * Azure Synapse Analytics
+  * Azure Data Lake. 
 * Azure Synapse Analytics is a **generalized analytics service** ->read data from many sources, process this data, generate various analyses and models, and save the results.
-* Two technologies to process data:
+* **Two technologies to process data:**
  * T-SQl
  * Spark
+
+### Azure Databricks
+* A **driver** is a piece of code that connects to a specific data source and enables you to read and write that source. 
+* A driver -> part of a library that you can load into the Databricks environment. 
+* Drivers are available -> Azure SQL Database, Azure Cosmos DB, Azure Blob storage, and Azure Data Lake storage, third-parties (such as MySQL and PostgreSQL).
+* Processing engine is provided by Apache Spark.
+* Spark is a parallel-processing engine that supports large-scale analytics.
+* Spark application code in Python, R, Scala, Java, and SQL.
+* Libraries include modules for machine learning, statistical analysis, linear and non-linear modeling, predictive analytics, and graphics.
+* Databricks applications using a **Notebook** -> steps called **cells**
+* In-memory model to a repository. The first line in the cell is %language. For example, %scala.
+![Databricks](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/2-databricks.png)
+
+### Azure HDInsight
+* Managed analytics service in the cloud.
+* Apache Hadoop, a collection of open-source tools and utilities that enable you to run processing tasks over large amounts of data. 
+* HDInsight uses a clustered model, similar to that of Synapse Analytics.
+* Hadoop Map/Reduce uses a simple framework to split a task over a large dataset into a series of smaller tasks over subsets of the data that can be run in parallel, and the results then combined.
+* **Apache Hive** provides interactive SQL-like facilities for querying, aggregating, and summarizing data.
+* **Apache Kafka** is a clustered streaming service that can ingest data in real time. 
+* **Apache Storm** is a scalable, fault tolerant platform for running real-time data processing applications. Streaming data.
+![HDInSight](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/2-hdinsight.png)
+
+* 
+
+ 
