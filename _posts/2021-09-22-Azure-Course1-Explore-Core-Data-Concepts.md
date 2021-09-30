@@ -135,7 +135,7 @@ Data is a collection of facts such as numbers, descriptions, and observations us
 ### Understand differences between batch and streaming data
 
  
- table align="center">
+ <table align="center">
   <tr><th align="center">Differences</th><th align="center">Batch</th><th align="center">Streaming</th></tr>
   <tr><td>Data Scope</td><td>process all the data in the dataset</td><td>most recent data received, or within a rolling time window (the last 30 seconds, for example)</td></tr>
    <tr><td>Data Size</td><td> handling large datasets efficiently</td><td>individual records or micro batches consisting of few records</td></tr>
