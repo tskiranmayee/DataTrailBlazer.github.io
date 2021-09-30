@@ -48,6 +48,6 @@ Tools to query data held in Azure SQL Database:
 
 * **psql** psql utility is available in the Azure Cloud Shell -> to query a database
 
-### ### Retrieve connection information for Azure Database for MySql
+### Retrieve connection information for Azure Database for MySql
 * Use MySql Benchmark.
    
