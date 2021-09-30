@@ -91,3 +91,5 @@ title: Describe concepts of relational data
 * Connect to them, create your databases, and upload your data. 
 
 ![benefits and tradeoffs when running a database management system](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/4-choose-platform.png)
+
+[<- Back to Main Menu]({{ site.baseurl }}{% post_url ../_posts/2021-07-20-Azure-DP900-Unit-1 %})
