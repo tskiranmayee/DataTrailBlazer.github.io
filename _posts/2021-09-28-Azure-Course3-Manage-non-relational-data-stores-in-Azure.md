@@ -3,7 +3,7 @@ layout: post
 title: Manage non-relational data stores in Azure
 ---
 
-### Manage MongoDb
+### Manage CosmoDB
 * NoSQL database management system
 * NoSQL systems, including MongoDB and Cassandra. 
 * Cosmos DB manages data as set of documents.
