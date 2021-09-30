@@ -214,3 +214,5 @@ and have enough compute power to process this data in a timely manner.
 * Spark notebooks and Transact-SQL jobs
 * Monitor the performance of operations that are currently running, and you can manage the serverless or provisioned resources.
 
+
+[<- Back to Main Menu]({{ site.baseurl }}{% post_url ../_posts/2021-07-20-Azure-DP900-Unit-1 %})
