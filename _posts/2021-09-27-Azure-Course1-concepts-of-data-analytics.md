@@ -44,3 +44,6 @@ It can involve writing code to capture, filter, clean, combine, and aggregate da
 ![2-etl-vs-elt](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/2-etl-vs-elt.png)
 ### Azure Data Factory, 
 Create and schedule data-driven workflows (called pipelines) that can ingest data from disparate data stores. You can build complex ETL processes that transform data visually with data flows, or by using compute services such as Azure HDInsight Hadoop, Azure Databricks, and Azure SQL Database.
+
+
+[<- Back to Main Menu]({{ site.baseurl }}{% post_url ../_posts/2021-07-20-Azure-DP900-Unit-1 %})
