@@ -75,3 +75,6 @@ title: Modern Data Warehousing
 * **Hadoop** is an open source framework that breaks large data processing problems down into smaller chunks and distributes them across a cluster of servers, similar to the way in which Synapse Analytics operates.
 * **Hive** is a SQL-like query facility that you can use with an HDInsight cluster to examine data held in a variety of formats. You can use it to create, load, and query external tables, in a manner similar to PolyBase for Azure Synapse Analytics
 ![HDInsight](https://raw.githubusercontent.com/TrailBlazed/trailblazed.github.io/gh-pages/assets/3-hdinsight.png)
+
+
+[<- Back to Main Menu]({{ site.baseurl }}{% post_url ../_posts/2021-07-20-Azure-DP900-Unit-1 %})
