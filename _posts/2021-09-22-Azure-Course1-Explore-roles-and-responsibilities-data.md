@@ -143,3 +143,4 @@ and enabling advanced analytics** capabilities through reports and visualization
 [Relational Databases]({{ site.baseurl }}{% post_url ../_posts/2021-09-27-Azure-Course1-Concepts-of-relational-data %})
 
 
+[<- Back to Main Menu]({{ site.baseurl }}{% post_url ../_posts/2021-07-20-Azure-DP900-Unit-1 %})
