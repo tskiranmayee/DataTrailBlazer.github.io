@@ -1,7 +1,9 @@
 ---
 layout : post
-title: Common Practices For Data Loading
+title:  Explore modern data warehouse analytics in Azure
 ---
+
+## Common Practices For Data Loading
 
 * In a big data system, data ingestion has to be fast enough to capture the large quantities of data that may be heading your way, 
 and have enough compute power to process this data in a timely manner.
@@ -66,4 +68,19 @@ and have enough compute power to process this data in a timely manner.
 
 ### 5. Azure Synapse Analytics
 * [Vedio Description](https://docs.microsoft.com/en-us/learn/modules/explore-data-ingestion-azure/3-load-data)
-* 
+
+## Data storage and processing in Azure
+
+*  Azure Synapse Analytics is to extract the data from where it's currently stored, **load** this data into an **analytical data store**, and then **transform** the data, shaping it for analysis. This approach is known as ELT, for extract, load, and transform.
+* Using **Apache Spark, and automated pipelines** -> it run parallel processing tasks across massive datasets, and perform _big data_ analytics.
+* _Big data_ refers to data that is too large or complex for traditional database systems. Systems that process big data have to perform rapid data ingestion and processing; they must have capacity to store the results, and sufficient compute power to perform analytics over these results.
+* Analyze operational data in its original location -> **hybrid transactional analytical processing (HTAP)** ->Perform analysis over data held in repositories such as Azure Cosmos DB using Azure Synapse Link.
+* **Processing data in Azure:**
+ * Azure Databricks
+ * Azure Data Factory
+ * Azure Synapse Analytics
+ * Azure Data Lake. 
+* Azure Synapse Analytics is a **generalized analytics service** ->read data from many sources, process this data, generate various analyses and models, and save the results.
+* Two technologies to process data:
+ * T-SQl
+ * Spark
