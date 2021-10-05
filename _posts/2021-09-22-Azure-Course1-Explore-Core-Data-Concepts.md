@@ -76,7 +76,7 @@ Data is a collection of facts such as numbers, descriptions, and observations us
 *  Store data in a format that more closely matches the original structure.
 *  Example : Document DB
 * **Advantage**: Ease of retrieving information ex: from one document.
-* **Disadvantage**: 1. Duplication (Ex: Same address of two different people stored seperately) <br>
+* **Disadvantage**: 1. Duplication (Ex: Same address of two different people stored seperately)
                     2. Increase in storage and complex maintanance. 
   
 #### Describe transactional workloads
@@ -125,7 +125,8 @@ Data is a collection of facts such as numbers, descriptions, and observations us
 * **Disadvantages of batch processing include:**
   1. The time delay between ingesting the data and getting the results.
   2. All of a batch job's input data must be ready before a batch can be processed (carefully checked,Problems with data, errors, and program crashes that occur during batch jobs bring the whole process to a halt, the input data must be carefully checked before the job can be run again, typographical errors in dates)
- ### Understand streaming and real-time data
+
+### Understand streaming and real-time data
  * Each new piece of data is processed when it arrives.
  * Streaming handles data in real time.
  * No waiting until the next batch processing interval
