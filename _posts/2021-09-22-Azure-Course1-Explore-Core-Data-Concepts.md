@@ -76,8 +76,9 @@ Data is a collection of facts such as numbers, descriptions, and observations us
 *  Store data in a format that more closely matches the original structure.
 *  Example : Document DB
 * **Advantage**: Ease of retrieving information ex: from one document.
-* **Disadvantage**: 1. Duplication (Ex: Same address of two different people stored seperately)
-                    2. Increase in storage and complex maintanance. 
+* **Disadvantage**: 
+      1. Duplication (Ex: Same address of two different people stored seperately)
+      2. Increase in storage and complex maintanance. 
   
 #### Describe transactional workloads
 ##### Relational Database workload
